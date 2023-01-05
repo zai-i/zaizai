@@ -19,22 +19,6 @@ class BlogRollTemplate extends React.Component {
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  ) : null}
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
