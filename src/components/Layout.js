@@ -37,7 +37,7 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
-        <meta name="theme-color" content="#5bbad5" />
+        <meta name="theme-color" content="#e899b1" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
