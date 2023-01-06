@@ -5,6 +5,7 @@ module.exports = {
       "Personal site of Zainab Ismail, a web developer and poet from London.",
   },
   plugins: [
+    'gatsby-plugin-dark-mode',
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
