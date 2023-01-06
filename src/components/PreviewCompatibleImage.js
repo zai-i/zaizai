@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: "5px" };
 
   const { alt = "", childImageSharp, image } = imageInfo;
 
@@ -11,7 +10,6 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     return (
       <GatsbyImage
         image={image.childImageSharp.gatsbyImageData}
-        style={imageStyle}
         alt={alt}
       />
     );
@@ -19,13 +17,12 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     return (
       <GatsbyImage
         image={childImageSharp.gatsbyImageData}
-        style={imageStyle}
         alt={alt}
       />
     );
     // for Netlify CMS 
   } else if (image) {
-    return <img style={{imageStyle}} src={image} alt={alt} />;
+    return <img src={image} alt={alt} />;
   } else {
     return null
   }

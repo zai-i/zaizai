@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                   <div className="tile is-ancestor">
-                    <div className="tile is-child is-4 portrait">
+                    <div className="tile is-child portrait">
                         <PreviewCompatibleImage imageInfo={image}/>
                       </div>
                       <div className="tile is-child is-flex is-flex-direction-column is-justify-content-center">
@@ -100,7 +100,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
