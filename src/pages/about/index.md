@@ -1,7 +1,8 @@
 ---
-templateKey: 'default-page'
+templateKey: default-page
 path: /about
 title: About
 ---
+N﻿othing to see yet!
 
-Nothing to see here yet.
+T﻿his website is built with Gatsby, Bulma CSS and uses Netlify CMS for managing content.
