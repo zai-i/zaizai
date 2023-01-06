@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold">
-                      Latest content
+                      Latest
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
