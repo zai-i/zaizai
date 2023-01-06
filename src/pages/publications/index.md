@@ -7,7 +7,7 @@ A lil place to keep track of stuff.
 
 ### Collections
 
-[Ecstatic Motion](https://www.marblepoetry.com/product/ecstaticmotion) with Marble Poetry\
+*[Ecstatic Motion](https://www.marblepoetry.com/product/ecstaticmotion)* with Marble Poetry\
 November 2020
 
 ### Anthologies
