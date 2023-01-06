@@ -11,6 +11,7 @@ export const IndexPageTemplate = ({
   image,
   heading,
   subheading,
+  socials,
   description,
 }) => {
 
@@ -28,15 +29,17 @@ export const IndexPageTemplate = ({
                         <PreviewCompatibleImage imageInfo={image}/>
                       </div>
                       <div className="tile is-child is-flex is-flex-direction-column is-justify-content-center">
-                        <h1 className="title">{heading}</h1>
+                        <h1 className="title" style={{fontFamily: 'Leckerli One'}}>{heading}</h1>
                         <h2 className="subtitle">{subheading}</h2>
                         <h3 className="description">{description}</h3>
+
+                        <a href={socials.insta}>insta</a> <a href={socials.linkedin}>linkedin</a>
                       </div>
                     </div>
                   </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold">
-                      Latest poems
+                      Latest content
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
@@ -60,6 +63,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   description: PropTypes.string,
+  socials: PropTypes.object,
 };
 
 const IndexPage = ({ data }) => {
@@ -72,6 +76,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         description={frontmatter.description}
+        socials={frontmatter.socials}
       />
     </Layout>
   );
@@ -102,6 +107,10 @@ export const pageQuery = graphql`
         heading
         subheading
         description
+        socials {
+          insta
+          linkedin
+        }
       }
     }
   }

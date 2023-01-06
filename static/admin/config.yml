@@ -29,35 +29,39 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-
+        
   - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Index Page"
+        label: "Index"
         name: "index"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Socials,
-              name: social,
-              widget: object,
-              fields:
-                [
-                  { label: Insta, name: insta, widget: string },
-                  { label: LinkedIn, name: linkedin, widget: text },
-                ],
-            }
-        
-
-      
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "image", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}]}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Subheading", name: "subheading", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Socials", name: "socials", widget: "object", fields: [{label: "Insta", name: "insta", widget: "string"}, {label: "Linkedin", name: "linkedin", widget: "string"}]}
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/publications/index.md"
+        label: "Publications"
+        name: "publications"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/projects/index.md"
+        label: "Projects"
+        name: "projects"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

@@ -34,7 +34,7 @@ class BlogRollTemplate extends React.Component {
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    keep reading →
+                    keep reading
                   </Link>
                 </p>
               </article>

@@ -53,13 +53,13 @@ html, body
     margin-bottom: 1.5rem
     margin-top: 0
 
-.btn, .button.is-link, a.button
+.btn, .button.is-link, a.button, button.is-link:hover
   display: inline-block
   padding: 12px 16px 10px
   font-size: 18px
   font-size: 1rem
   line-height: 1.25
-  background-color: var(--pink) 
+  background-color: var(--pink) !important
   text-transform: lowercase
   border-radius: .25rem
   border-width: 0
@@ -103,6 +103,7 @@ html, body
   border: none
   background: transparent
   box-shadow: none
+  margin-top: 1.5em
   &::before 
     content: url("/img/images/modes/light.svg")
     display: block
@@ -120,14 +121,10 @@ html, body
 +mobile
   .blog-list-item header
     display: block
-  .navbar-menu 
-    background-color: var(--overlay)
-    opacity: 9
-    height: 100vh
 
 // overrides
 
-h1, h2, h3, label
+h1, h2, h3, h4, label
   font-weight: normal !important
   color: var(--text) !important
 
@@ -159,5 +156,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .portrait img
   border-radius: 9999px
 
-h1.title
-  font-family: 'Leckerli One' !important
+.content p:not(:last-child), .content ul:not(:last-child) 
+  margin-bottom: 0 !important
+
+@media screen and (max-width: 1023px)
+  .navbar-menu 
+    background-color: var(--overlay)!important
+    padding: 10vh 0 !important
+    height: 100vh
+    position: fixed
+    width: 100vw
+    top: 0

@@ -3,17 +3,41 @@ templateKey: 'default-page'
 path: /publications
 title: Publications 
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+A place to keep track of stuff.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Collections
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+[Ecstatic Motion](https://www.marblepoetry.com/product/ecstaticmotion) with Marble Poetry 
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+November 2020
+
+### Anthologies
+
+[‘Dancing with my Rubik’s Cube’](https://newrules.website/2020/12/29/zainab-ismail-dancing-with-my-rubiks-cube) in _New Rules_ 
+
+29 December 2020
+
+[‘sharp relief’ and ‘trilateral roots’](https://www.boilerhouse.press/wretched-strangers) in _Wretched Strangers_
+
+23 June 2018
+
+### Print Magazines 
+
+[‘Abacus Park’](https://skindeepmag.com/) in _Skin Deep_
+
+18 March 2020 (issue 9: Is This The End?)
+
+[‘Grandmother’](https://tearsinthefence.com/) in _Tears in the Fence_
+
+1 October 2016
+
+### Digital Magazines
+
+[‘Admonition in Comic Sans’](https://www.streetcakemagazine.com/uploads/2/4/7/1/24713274/issue_68_part2_option__4_.pdf) in _Streetcake_
+
+August 2020 (issue 68 part 2)  
+
+[Two villanelles, ‘Otherworld’ and ‘Pipette’](https://fortnightlyreview.co.uk/2016/10/two-villanelles) in _Fortnightly Review_
+
+1 October 2016
