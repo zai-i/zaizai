@@ -7,7 +7,7 @@ body.light
   --overlay: #dffdc8
   --nav: linear-gradient(to bottom, #dffdc8, rgba(223, 253, 200, 0%))
   --bg: #faeed7
-  --bg-lighter: #f5ecdd
+  --bg-lighter: #fdf8ee
   --text: #75536f
   --logo: url("/img/images/logos/light.png")
 
@@ -30,7 +30,7 @@ body.dark
 html, body 
   background-color: var(--bg) 
   color: var(--text) !important
-  font-family: 'Fugue'
+  font-family: 'Fugue', Arial, Helvetica, sans-serif
   transition: color 0.3s 
 
 .navbar .navbar-menu
@@ -66,10 +66,13 @@ html, body
   border-width: 0
   text-decoration: none
   font-weight: 700
-  color: #f5ecdd
+  color: #fdf8ee
+  font-family: 'Fugue', Arial, Helvetica, sans-serif
   text-align: center
   -webkit-transition: all .15s ease
   transition: all .15s ease
+  &:hover 
+    color: var(--pink)
 
 .margin-top-0
   margin-top: 0 
@@ -137,7 +140,7 @@ form
   input, textarea 
     background: var(--bg-lighter) !important
     color: var(--text) !important
-    font-family: 'Fugue' !important
+    font-family: 'Fugue', Arial, Helvetica, sans-serif !important
 
 a, a.has-text-primary:hover, a.has-text-primary:focus
   font-weight: 600
