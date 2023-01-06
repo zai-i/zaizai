@@ -2,12 +2,12 @@
 templateKey: writing-post
 title: Departure (Train in the rain)
 date: 2023-01-06T13:16:21.097Z
+tags:
+  - freeverse
 ---
 T﻿rain in the rain;
 
 c﻿herish the quiet swelling
-
-
 
 a﻿s I breathe up 
 
@@ -19,11 +19,15 @@ M﻿ind the gap
 
 f﻿ills my brain, each
 
- ﻿
 
- ﻿
+
+
+
+
 
 d﻿rop.
+
+
 
 
 
