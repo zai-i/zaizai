@@ -36,9 +36,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="section section--gradient">
           <div className="container">
-            <div className="content">
+            <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 Contact
               </h2>
