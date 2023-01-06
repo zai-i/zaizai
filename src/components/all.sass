@@ -77,7 +77,7 @@ html, body
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 
-.navbar-brand .logo span
+.navbar-brand span.logo
   content: var(--logo)
 
 .navbar-burger span
@@ -173,14 +173,5 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     position: fixed
     width: 100vw
 
-@media screen and (min-width: 449px)
-  .portrait img
-    width: 300px
-  .portrait
-    text-align: center
-
-@media screen and (orientation: landscape) 
-  .portrait img
-    width: 300px
-  .portrait
-    text-align: center
+.portrait
+  text-align: center
