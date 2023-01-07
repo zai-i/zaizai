@@ -112,7 +112,7 @@ html, body
   border: none
   background: transparent
   box-shadow: none
-  margin-top: 1.5em
+  margin-top: 1em
   &::before 
     content: url("/img/images/modes/light.svg")
     display: block
@@ -130,21 +130,6 @@ html, body
 +mobile
   .blog-list-item header
     display: block
-  .navbar-menu 
-    background-color: var(--overlay)!important
-    opacity: 0.95
-    top: 0
-    height: 100vh
-    padding-top: 3.25rem
-    position: absolute
-    width: 100vw
-    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important
-  .navbar
-    position: fixed
-    width: 100vw
-  .navbar-brand
-    z-index: 2
-    position: relative
 
 // overrides
 
@@ -192,3 +177,19 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background:  var(--overlay)
 ::-moz-selection 
   background: var(--overlay)
+
+@media screen and (max-width: 1023px)
+  .navbar-menu 
+    background-color: var(--overlay) !important
+    opacity: 0.95
+    position: fixed
+    inset: 0
+    padding-top: 3.5rem
+  .navbar-item
+    vertical-align: middle
+  .navbar
+    position: fixed
+    width: 100vw
+  .navbar-brand
+    z-index: 2
+    position: relative
