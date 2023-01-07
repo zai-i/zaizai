@@ -178,18 +178,22 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 ::-moz-selection 
   background: var(--overlay)
 
-@media screen and (max-width: 1023px)
-  .navbar-menu 
-    background-color: var(--overlay) !important
-    opacity: 0.95
-    position: fixed
-    inset: 0
-    padding-top: 3.5rem
-  .navbar-item
-    vertical-align: middle
-  .navbar
-    position: fixed
-    width: 100vw
-  .navbar-brand
-    z-index: 2
-    position: relative
+@media screen 
+  @media (max-width: 1023px)
+    .navbar-menu 
+      background-color: var(--overlay) !important
+      opacity: 0.95
+      position: fixed
+      inset: 0
+    .navbar
+      position: fixed
+      width: 100vw
+    .navbar-brand
+      z-index: 2
+      position: relative
+    @media (orientation: portrait)
+      .navbar-menu 
+        padding-top: 25vh
+    @media (orientation: landscape)
+      .navbar-menu 
+        padding-top: 10vh
