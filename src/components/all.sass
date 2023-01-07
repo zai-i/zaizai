@@ -130,6 +130,21 @@ html, body
 +mobile
   .blog-list-item header
     display: block
+  .navbar-menu 
+    background-color: var(--overlay)!important
+    opacity: 0.95
+    top: 0
+    height: 100vh
+    padding-top: 3.25rem
+    position: absolute
+    width: 100vw
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important
+  .navbar
+    position: fixed
+    width: 100vw
+  .navbar-brand
+    z-index: 2
+    position: relative
 
 // overrides
 
@@ -160,28 +175,20 @@ a.navbar-item
   color: var(--pink) 
   font-size: 1.2rem
    
-a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active 
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
   background-color: var(--pink) 
   color: var(--pink) 
 
 .portrait img
   border-radius: 9999px
 
-@media screen and (max-width: 1023px)
-  .navbar-menu 
-    background-color: var(--overlay)!important
-    opacity: 0.95
-    top: 0rem
-    padding-top: 3.25rem
-    position: absolute
-    width: 100vw
-    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%) !important
-  .navbar
-    position: fixed
-    width: 100vw
-
 .portrait
   text-align: center
 
 .columns 
   margin-top: 0 !important
+
+::selection 
+  background:  var(--overlay)
+::-moz-selection 
+  background: var(--overlay)

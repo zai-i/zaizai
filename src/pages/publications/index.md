@@ -3,7 +3,7 @@ templateKey: default-page
 path: /publications
 title: Publications
 ---
-A lil place to keep track of stuff.
+Just a lil place to keep track of stuff.
 
 ### Collections
 
