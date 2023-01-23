@@ -4,19 +4,17 @@
 // Config vars
 body.light
   --pink: #e899b1
-  --overlay: #dffdc8
-  --nav: linear-gradient(to bottom, #dffdc8, rgba(223, 253, 200, 0%))
-  --bg: #faeed7
-  --bg-lighter: #f5ecdd
+  --bg-dark: #F9F3E6
+  --bg-medium: #F3E6D4
+  --bg-light: #FFFAF0
   --text: #75536f
   --logo: url("/img/images/logos/light.png")
 
 body.dark
   --pink: #e899b1
-  --overlay: #612955
-  --nav: linear-gradient(to bottom, #612955, rgba(97, 41, 85, 0%))
-  --bg: #051937
-  --bg-lighter: #1b2f4c
+  --bg-dark: #051937
+  --bg-medium: #1b2f4c
+  --bg-light: #1E3251
   --text: #b7caaa
   --logo: url("/img/images/logos/dark.png")
 
@@ -28,16 +26,18 @@ body.dark
   src: url("/fonts/LeckerliOne-Regular.ttf")
 
 html, body 
-  background-color: var(--bg) 
   color: var(--text) !important
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   transition: color 0.3s 
+  background-color: var(--bg-dark)
+  background-size: 20px 20px
+  background-image:  repeating-linear-gradient(0deg, var(--bg-medium), var(--bg-medium) 1px, var(--bg-dark) 1px, var(--bg-dark))
 
 .navbar .navbar-menu
   box-shadow: none 
 
 .navbar
-  background: var(--nav) 
+  background: var(--bg-dark) 
 
 .content .taglist
   list-style: none
@@ -69,7 +69,6 @@ html, body
   color: #75536f
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   text-align: center
-  box-shadow: 2px 2px #75536f
   -webkit-transition: all .15s ease
   transition: all .15s ease
   &:hover 
@@ -83,6 +82,9 @@ html, body
 
 .navbar-brand span.logo
   content: var(--logo)
+
+.navbar-burger
+  height: unset !important
 
 .navbar-burger span
   height: 2px !important
@@ -101,8 +103,9 @@ html, body
   margin-bottom: 1em
 
 .blog-list-item
-  background: var(--bg-lighter) 
+  background: var(--bg-light) 
   color: var(--text) 
+  box-shadow: none !important
 
 #checkbox 
   cursor: pointer
@@ -112,7 +115,7 @@ html, body
   border: none
   background: transparent
   box-shadow: none
-  margin-top: 1em
+  margin-top: 1.5em
   &::before 
     content: url("/img/images/modes/light.svg")
     display: block
@@ -139,7 +142,7 @@ h1, h2, h3, h4, label
 
 form
   input, textarea 
-    background: var(--bg-lighter) !important
+    background: var(--bg-light) !important
     color: var(--text) !important
     font-family: 'Fugue', Arial, Helvetica, sans-serif !important
 
@@ -174,14 +177,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   margin-top: 0 !important
 
 ::selection 
-  background:  var(--overlay)
+  background:  var(--pink)
 ::-moz-selection 
-  background: var(--overlay)
+  background: var(--pink)
 
 @media screen 
   @media (max-width: 1023px)
     .navbar-menu 
-      background-color: var(--overlay) !important
+      background-color: var(--bg-dark) !important
       opacity: 0.95
       position: fixed
       inset: 0
@@ -193,7 +196,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       position: relative
     @media (orientation: portrait)
       .navbar-menu 
-        padding-top: 20vh
+        padding-top: 25vh
     @media (orientation: landscape)
       .navbar-menu 
         padding-top: 5vw
