@@ -191,5 +191,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     .navbar-brand
       z-index: 2
       position: relative
-    .navbar-menu 
-      padding-top: 25vh
+    @media (orientation: portrait)
+      .navbar-menu 
+        padding-top: 20vh
+    @media (orientation: landscape)
+      .navbar-menu 
+        padding-top: 5vw
