@@ -4,17 +4,17 @@
 // Config vars
 body.light
   --pink: #e899b1
-  --bg-dark: #F9F3E6
-  --bg-medium: #F3E6D4
+  --bg-dark: #f0e1cd
+  --bg-medium: #f7ead8
   --bg-light: #FFFAF0
   --text: #75536f
   --logo: url("/img/images/logos/light.png")
 
 body.dark
   --pink: #e899b1
-  --bg-dark: #051937
-  --bg-medium: #1b2f4c
-  --bg-light: #1E3251
+  --bg-dark: #172b49
+  --bg-medium: #183154
+  --bg-light: #2b486d
   --text: #b7caaa
   --logo: url("/img/images/logos/dark.png")
 
@@ -29,15 +29,15 @@ html, body
   color: var(--text) !important
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   transition: color 0.3s 
-  background-color: var(--bg-dark)
+  background-color: var(--bg-medium)
   background-size: 20px 20px
-  background-image:  repeating-linear-gradient(0deg, var(--bg-medium), var(--bg-medium) 1px, var(--bg-dark) 1px, var(--bg-dark))
+  background-image:  repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-medium) 1px, var(--bg-medium))
 
 .navbar .navbar-menu
   box-shadow: none 
 
 .navbar
-  background: var(--bg-dark) 
+  background: var(--bg-medium) 
 
 .content .taglist
   list-style: none
@@ -142,7 +142,7 @@ h1, h2, h3, h4, label
 
 form
   input, textarea 
-    background: var(--bg-light) !important
+    background: var(--bg-medium) !important
     color: var(--text) !important
     font-family: 'Fugue', Arial, Helvetica, sans-serif !important
 
