@@ -4,16 +4,14 @@
 // Config vars
 body.light
   --pink: #e899b1
-  --bg-dark: #f0e1cd
-  --bg-medium: #f7ead8
-  --bg-light: #f6eedc
+  --bg-dark: #f7ecdd
+  --bg-light: #fef8ec
   --text: #75536f
   --logo: url("/img/images/logos/light.png")
 
 body.dark
   --pink: #e899b1
-  --bg-dark: #172b49
-  --bg-medium: #183154
+  --bg-dark: #183154
   --bg-light: #2b486d
   --text: #b7caaa
   --logo: url("/img/images/logos/dark.png")
@@ -28,16 +26,14 @@ body.dark
 html, body 
   color: var(--text) !important
   font-family: 'Fugue', Arial, Helvetica, sans-serif
-  transition: color 0.3s 
   background-color: var(--bg-dark)
-  background-size: 20px 20px
-  background-image:  repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-medium) 1px, var(--bg-medium))
+  transition: all 0.3s 
 
 .navbar .navbar-menu
   box-shadow: none 
 
 .navbar
-  background: var(--bg-medium) 
+  background: none
 
 .content .taglist
   list-style: none
@@ -69,9 +65,7 @@ html, body
   color: #75536f
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   text-align: center
-  -webkit-transition: all .15s ease
-  transition: all .15s ease
-  &:hover 
+  &:hover
     color: var(--pink)
 
 .margin-top-0
@@ -153,7 +147,6 @@ a, a.has-text-primary:hover, a.has-text-primary:focus
   &:hover 
     opacity: 0.75
     text-decoration: none !important
-    transition: 0.3s
     color: var(--pink) !important 
 
 .has-text-primary
@@ -200,3 +193,15 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     @media (orientation: landscape)
       .navbar-menu 
         padding-top: 5vw
+
+button, a 
+  -webkit-tap-highlight-color: transparent
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+button:focus, a:focus 
+  outline: none !important
