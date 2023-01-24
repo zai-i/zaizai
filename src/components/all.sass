@@ -9,14 +9,16 @@ body.light
   --bg-light: #F3E8BA
   --henna: #821D30
   --green: #82D2A4
+  --green-light: #83c9a2
 
 body.dark
   --pink: #E6569E
   --cinnamon: #C87620
   --bg-dark: #403156
-  --bg-light: #2c3051
+  --bg-light: #25294c
   --henna: #F3E8BA
   --green: #091727
+  --green-light: #1b242f
 
 @font-face 
   font-family: 'Inter'
@@ -104,7 +106,7 @@ html, body
   margin-bottom: 1em
 
 .blog-list-item
-  background: var(--bg-light) 
+  background: none
   color: var(--henna) 
   box-shadow: none !important
 
@@ -210,13 +212,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     left: 0
   .blog-roll.content-section
     position: relative
-    top: 0
+    top: -1em
     width: 100%
   .border-parent
     position: absolute
     top: 0
-    left: calc(33vw - 4px)
-    width: calc(67vw + 4px)
+    left: 33vw
+    width: 67vw
   svg.henna-border 
     position: relative
     left: calc(50% - 200px)
@@ -282,14 +284,12 @@ svg.animate path
 
 .about.content-section
   background: var(--bg-dark)
-  border: 4px solid var(--henna)
 
 .description
   margin-top: 2.5em
 
 .blog-roll
-  background: var(--green)
-  border: 4px solid var(--henna)  
+  background: var(--green) 
 
 .tile.butterfly, svg.henna-border
   display: flex
