@@ -29,8 +29,12 @@ html, body
   color: var(--henna) !important
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   background-color: var(--bg-light)
+  background-size: 20px 20px
+  background-image:  repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-light) 1px, var(--bg-light))
   transition: all 0.3s 
   margin-bottom: 3%
+  opacity: 0.9
+  font-size: calc(0.9em + 0.1vw)
 
 .navbar .navbar-menu
   box-shadow: none 
@@ -189,6 +193,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .navbar-menu
     background: var(--bg-light)
 
+
 @media (orientation: landscape)
   #checkbox
     margin-left: 1em
@@ -209,20 +214,23 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .border-parent
     position: absolute
     top: 0
-    left: 33.5vw
-    width: 66.5vw
+    left: calc(33vw - 4px)
+    width: calc(67vw + 4px)
   svg.henna-border 
     position: relative
     left: calc(50% - 200px)
-    top: -3em
+    top: -3.5em
   #navMenu
     width: 33vw
     display: flex
-    justify-content: center
+    justify-content: space-around
     position: absolute
     margin: 1em 0 1em 0 
+    background: none
   .about, .butterfly
     top: 3em
+  .navbar-burger
+    display: none !important
 
 button, a 
   -webkit-tap-highlight-color: transparent
@@ -263,10 +271,8 @@ svg.animate path
   padding: 0
 
 .border
-  border: 2px solid var(--henna)
   margin: 1em
   padding: 1em
-  border-radius: 10px
 
 .about.content-section
   background: var(--bg-dark)
