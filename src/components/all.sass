@@ -185,14 +185,15 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 @media (orientation: portrait)
   .content-section
     width: 100vw
-  .tile.butterfly, svg.border
-    width: 100vw
+  .tile.butterfly, svg.henna-border
+    width: 95vw
   .blog-roll
     left: -0.75em
     position: relative
   .navbar-menu
-    background: var(--bg-light)
-
+    background: none
+  #navMenu
+    width: 100vw
 
 @media (orientation: landscape)
   #checkbox
@@ -222,15 +223,20 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     top: -3.5em
   #navMenu
     width: 33vw
-    display: flex
-    justify-content: space-around
-    position: absolute
-    margin: 1em 0 1em 0 
-    background: none
-  .about, .butterfly
-    top: 3em
   .navbar-burger
     display: none !important
+
+.about, .butterfly
+  top: 2.5em
+  position: relative
+
+#navMenu
+  display: flex
+  justify-content: space-around
+  position: absolute
+  margin: 1em 0 1em 0 
+  background: none
+  align-items: center
 
 button, a 
   -webkit-tap-highlight-color: transparent
@@ -301,7 +307,7 @@ button, input[type="submit"], input[type="reset"]
   color: var(--pink) !important
   transform: scale(1.5)
 .navbar-item svg
-  transform: scale(2) translateY(-2px)
+  transform: scale(2)
 .navbar-item button
   color: var(--pink) !important
   margin: 0 auto

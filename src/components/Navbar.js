@@ -12,22 +12,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="main-navigation"
     >
-        <div className="navbar-brand">
-          {/* Hamburger menu */}
-          <button
-            className={`navbar-burger burger ${isActive && "is-active"}`}
-            aria-expanded={isActive}
-            onClick={() => setIsActive(!isActive)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
-            {/* TODO: inline override of padding is a result of refactoring
-                to a ul for accessibilty purposes, would like to see a css
-                re-write that makes this unneccesary.
-             */}
+        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu`}>
             <li className="navbar-item" style={{padding: "0px"}}>
               <Link className="navbar-item" to="/">
                 <FaHome/>
@@ -40,7 +25,6 @@ const Navbar = () => {
               <ThemeToggle/>
             </li>
         </ul>
-      </div>
     </nav>
   );
 };
