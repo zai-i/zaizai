@@ -4,8 +4,8 @@ title: Index
 image:
   image: /img/images/portrait.png
   alt: portrait
-heading: Hey
-subheading: I’m Zainab Ismail.
+heading: hey
+subheading: i’m zainab ismail.
 description: I’m a front-end developer and (occasional) poet based in London.
 socials:
   insta: https://www.instagram.com/zai.ghazala

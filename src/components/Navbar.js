@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import ThemeToggle from "./ThemeToggle";
+import { FaHome, FaBackward } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -11,11 +12,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
-            <span className="logo" style={{ width: "50px" }} />
-          </Link>
           {/* Hamburger menu */}
           <button
             className={`navbar-burger burger ${isActive && "is-active"}`}
@@ -26,7 +23,6 @@ const Navbar = () => {
             <span />
             <span />
           </button>
-        </div>
         <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
             {/* TODO: inline override of padding is a result of refactoring
                 to a ul for accessibilty purposes, would like to see a css
@@ -34,35 +30,13 @@ const Navbar = () => {
              */}
             <li className="navbar-item" style={{padding: "0px"}}>
               <Link className="navbar-item" to="/">
-                Home
+                <FaHome/>
               </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-            </li>
+              <button className="navbar-item" onClick={() => { navigate(-1) }}><FaBackward/></button>
+              </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/projects">
-              Projects
-            </Link>
-            </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/writing">
-              Writing
-            </Link>
-            </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/publications">
-              Publications
-            </Link>
-            </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/contact">
-              Contact
-            </Link>
-            </li>
-            <li className="navbar-end has-text-centered">
               <ThemeToggle/>
             </li>
         </ul>
