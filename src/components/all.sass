@@ -3,31 +3,34 @@
 
 // Config vars
 body.light
-  --pink: #e899b1
-  --bg-dark: #f7ecdd
-  --bg-light: #fef8ec
-  --text: #75536f
-  --logo: url("/img/images/logos/light.png")
+  --pink: #E6569E
+  --cinnamon: #C87620
+  --bg-dark: #E4B4A0
+  --bg-light: #F3E8BA
+  --henna: #821D30
+  --green: #82D2A4
 
 body.dark
-  --pink: #e899b1
-  --bg-dark: #183154
-  --bg-light: #2b486d
-  --text: #b7caaa
-  --logo: url("/img/images/logos/dark.png")
+  --pink: #E6569E
+  --cinnamon: #C87620
+  --bg-dark: #403156
+  --bg-light: #2c3051
+  --henna: #F3E8BA
+  --green: #091727
 
 @font-face 
-  font-family: 'Fugue'
-  src: url("/fonts/Fugue-Regular.ttf")
+  font-family: 'Inter'
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf")
 @font-face 
   font-family: 'Leckerli One'
   src: url("/fonts/LeckerliOne-Regular.ttf")
 
 html, body 
-  color: var(--text) !important
+  color: var(--henna) !important
   font-family: 'Fugue', Arial, Helvetica, sans-serif
-  background-color: var(--bg-dark)
+  background-color: var(--bg-light)
   transition: all 0.3s 
+  margin-bottom: 3%
 
 .navbar .navbar-menu
   box-shadow: none 
@@ -98,7 +101,7 @@ html, body
 
 .blog-list-item
   background: var(--bg-light) 
-  color: var(--text) 
+  color: var(--henna) 
   box-shadow: none !important
 
 #checkbox 
@@ -109,7 +112,7 @@ html, body
   border: none
   background: transparent
   box-shadow: none
-  margin-top: 1.5em
+  margin: 1em 0
   &::before 
     content: url("/img/images/modes/light.svg")
     display: block
@@ -136,7 +139,7 @@ h1, h2, h3, h4, label
 
 form
   input, textarea 
-    background: var(--bg-light) !important
+    background: var(--green) !important
     color: var(--text) !important
     font-family: 'Fugue', Arial, Helvetica, sans-serif !important
 
@@ -157,7 +160,7 @@ a.navbar-item
   font-size: 1.2rem
    
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
-  background-color: var(--pink) 
+  background-color: transparent !important
   color: var(--pink) 
 
 .portrait img
@@ -165,6 +168,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .portrait
   text-align: center
+  margin-bottom: 2em
 
 .columns 
   margin-top: 0 !important
@@ -174,25 +178,51 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 ::-moz-selection 
   background: var(--pink)
 
-@media screen 
-  @media (max-width: 1023px)
-    .navbar-menu 
-      background-color: var(--bg-dark) !important
-      opacity: 0.95
-      position: fixed
-      inset: 0
-    .navbar
-      position: fixed
-      width: 100vw
-    .navbar-brand
-      z-index: 2
-      position: relative
-    @media (orientation: portrait)
-      .navbar-menu 
-        padding-top: 25vh
-    @media (orientation: landscape)
-      .navbar-menu 
-        padding-top: 5vw
+@media (orientation: portrait)
+  .content-section
+    width: 100vw
+  .tile.butterfly, svg.border
+    width: 100vw
+  .blog-roll
+    left: -0.75em
+    position: relative
+  .navbar-menu
+    background: var(--bg-light)
+
+@media (orientation: landscape)
+  #checkbox
+    margin-left: 1em
+  .who-am-i
+    display: flex
+    flex-direction: row
+  .tile.butterfly, .tile.about
+    width: 33vw   
+    position: relative
+  .tiles-parent
+    position: relative
+    top: 0
+    left: 0
+  .blog-roll.content-section
+    position: relative
+    top: 0
+    width: 100%
+  .border-parent
+    position: absolute
+    top: 0
+    left: 33.5vw
+    width: 66.5vw
+  svg.henna-border 
+    position: relative
+    left: calc(50% - 200px)
+    top: -3em
+  #navMenu
+    width: 33vw
+    display: flex
+    justify-content: center
+    position: absolute
+    margin: 1em 0 1em 0 
+  .about, .butterfly
+    top: 3em
 
 button, a 
   -webkit-tap-highlight-color: transparent
@@ -205,3 +235,67 @@ button, a
 
 button:focus, a:focus 
   outline: none !important
+
+svg.animate path
+  stroke-dasharray: 500
+  stroke-dashoffset: 500
+  stroke-width: 3
+  stroke: var(--cinnamon)
+  fill: none
+  animation: dash 10s linear alternate infinite
+
+@keyframes dash 
+  from 
+    stroke-dashoffset: 400
+  to 
+    stroke-dashoffset: 0
+
+.card-header
+  box-shadow: none  
+
+.card-header-title, h3.latest
+  padding: 0
+  color: var(--henna)
+  font-size: 1.15em
+  font-weight: 600 !important
+
+.card-content
+  padding: 0
+
+.border
+  border: 2px solid var(--henna)
+  margin: 1em
+  padding: 1em
+  border-radius: 10px
+
+.about.content-section
+  background: var(--bg-dark)
+  border: 4px solid var(--henna)
+
+.description
+  margin-top: 2.5em
+
+.blog-roll
+  background: var(--green)
+  border: 4px solid var(--henna)  
+
+.tile.butterfly, svg.henna-border
+  display: flex
+  justify-content: center
+
+button, input[type="submit"], input[type="reset"] 
+  background: none
+  border: none
+  padding: 0
+  font: inherit
+  cursor: pointer
+  outline: inherit
+
+.navbar-item input
+  color: var(--pink) !important
+  transform: scale(1.5)
+.navbar-item svg
+  transform: scale(2) translateY(-2px)
+.navbar-item button
+  color: var(--pink) !important
+  margin: 0 auto
