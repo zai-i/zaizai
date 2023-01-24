@@ -32,10 +32,9 @@ html, body
   font-family: 'Fugue', Arial, Helvetica, sans-serif
   background-color: var(--bg-light)
   background-size: 20px 20px
-  background-image:  repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-light) 1px, var(--bg-light))
+  background-image: repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-light) 1px, var(--bg-light))
   transition: all 0.3s 
   margin-bottom: 3%
-  opacity: 0.9
   font-size: calc(0.9em + 0.1vw)
 
 .navbar .navbar-menu
@@ -187,13 +186,22 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 @media (orientation: portrait)
   .content-section
     width: 100vw
-  .tile.butterfly, svg.henna-border
-    width: 95vw
+  .svg
+    width: 100vw
+    display: flex
+    justify-content: center 
+    background-color: var(--bg-light)
+    background-size: 20px 20px
+    background-image: repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-light) 1px, var(--bg-light))
+  .svg svg
+    width: 50%
   .blog-roll
     left: -0.75em
     position: relative
   .navbar-menu
-    background: none
+    background-color: var(--bg-light)
+    background-size: 20px 20px
+    background-image: repeating-linear-gradient(0deg, var(--bg-dark), var(--bg-dark) 1px, var(--bg-light) 1px, var(--bg-light))
   #navMenu
     width: 100vw
 
@@ -219,7 +227,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     top: 0
     left: 33vw
     width: 67vw
-  svg.henna-border 
+  .henna-border 
     position: relative
     left: calc(50% - 200px)
     top: -3.5em
@@ -305,7 +313,7 @@ button, input[type="submit"], input[type="reset"]
 
 .navbar-item input
   color: var(--pink) !important
-  transform: scale(1.5)
+  transform: scale(1.5) translate(2px)
 .navbar-item svg
   transform: scale(2)
 .navbar-item button
