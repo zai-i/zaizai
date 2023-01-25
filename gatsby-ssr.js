@@ -4,7 +4,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="/fonts/Fugue-Regular.ttf"
+      href="/fonts/Inter-VariableFont_wght.ttf"
       as="font"
       type="font/ttf"
       crossOrigin="anonymous"
@@ -16,7 +16,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     as="font"
     type="font/ttf"
     crossOrigin="anonymous"
-    key="interFont"
+    key="leckerliFont"
   />,
   ])
 }
