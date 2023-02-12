@@ -1,5 +1,5 @@
 ---
-templateKey: writing-post
+templateKey: blog-post
 title: Musings standing at a station
 date: 2023-01-06T13:18:28.888Z
 tags:

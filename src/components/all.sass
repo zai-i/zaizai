@@ -1,5 +1,4 @@
 @import "~bulma"
-@import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
 body.light
@@ -24,7 +23,7 @@ body.dark
   src: url("/fonts/LeckerliOne-Regular.ttf")
 
 html, body 
-  color: var(--text) !important
+  color: var(--text) 
   font-family: 'Inter', Arial, Helvetica, sans-serif
   background-color: var(--bg-dark)
   transition: all 1s 
@@ -56,13 +55,13 @@ html, body
   font-size: 18px
   font-size: 1rem
   line-height: 1.25
-  background-color: var(--pink) !important
+  background-color: var(--pink) 
   text-transform: lowercase
-  border-radius: 0 !important
+  border-radius: 0 
   border-width: 0
   text-decoration: none
   font-weight: 700
-  color: var(--bg-light)
+  color: var(--bg-light) !important
   font-family: 'Inter', Arial, Helvetica, sans-serif
   text-align: center
   &:hover
@@ -78,11 +77,11 @@ html, body
   content: var(--logo)
 
 .navbar-burger
-  height: unset !important
+  height: unset 
 
 .navbar-burger span
   height: 2px !important
-  background-color: var(--pink) !important
+  background-color: var(--pink)
 
 .menu-label
   font-size: 1em 
@@ -99,7 +98,7 @@ html, body
 .blog-list-item
   background: var(--bg-light) 
   color: var(--text) 
-  box-shadow: none !important
+  box-shadow: none
 
 #checkbox 
   cursor: pointer
@@ -130,30 +129,32 @@ html, body
 
 // overrides
 
-h1, h2, h3, h4, label
-  font-weight: normal !important
-  color: var(--text) !important
+.label, h1.title, h2.subtitle, h3.description, 
+.content h1, .content h2, .content h3, .content h4, .title
+  font-weight: normal 
+  color: var(--text) 
+
+.title.has-text-primary.is-size-4 
+  font-weight: 600
 
 form
-  input, textarea 
-    background: var(--bg-light) !important
-    color: var(--text) !important
-    font-family: 'Inter', Arial, Helvetica, sans-serif !important
+  input.input, textarea.textarea
+    background: var(--bg-light) 
+    color: var(--text) 
+    font-family: 'Inter', Arial, Helvetica, sans-serif 
 
-a, a.has-text-primary:hover, a.has-text-primary:focus
+a, a.has-text-primary:hover
   font-weight: 600
   text-decoration: none !important
-  color: var(--pink)
-  &:hover 
+  color: var(--pink) !important
+  &:hover, &:focus
     opacity: 0.75
-    text-decoration: none !important
-    color: var(--pink) !important 
 
 .has-text-primary
   color: var(--pink) !important
   
 a.navbar-item 
-  color: var(--pink) 
+  color: var(--pink)
   font-size: 1.2rem
    
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
@@ -167,7 +168,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   text-align: center
 
 .columns 
-  margin-top: 0 !important
+  margin-top: 0 
 
 ::selection 
   background:  var(--pink)
@@ -175,9 +176,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background: var(--pink)
 
 @media screen 
+  @media (orientation: landscape)
+    .position-top
+      position: absolute
+      top: 5%
+      left: 5%
   @media (max-width: 1023px)
     .navbar-menu 
-      background-color: var(--bg-dark) !important
+      background-color: var(--bg-dark)
       opacity: 0.95
       position: fixed
       inset: 0
@@ -205,4 +211,5 @@ button, a
   user-select: none
 
 button:focus, a:focus 
-  outline: none !important
+  outline: none 
+

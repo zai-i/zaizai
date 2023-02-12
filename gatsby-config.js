@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-dark-mode',
+    'gatsby-plugin-styled-components',
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
