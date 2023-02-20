@@ -110,16 +110,16 @@ html, body
   box-shadow: none
   margin-top: 1.5em
   &::before 
-    content: url("/img/images/modes/light.svg")
-    display: block
-  &::after 
     content: url("/img/images/modes/dark.svg")
     display: none
+  &::after 
+    content: url("/img/images/modes/light.svg")
+    display: block
   &:checked
     &::before 
-      display: none
-    &::after 
       display: block
+    &::after 
+      display: none
 
 // responsiveness
 
