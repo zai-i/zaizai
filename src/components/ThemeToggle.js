@@ -6,12 +6,10 @@ export default class ThemeToggle extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-            <input
-              id="checkbox"
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />
+            <button className="unstyled"
+            onClick={e => theme === 'light' ? toggleTheme('dark') : toggleTheme('light')}>
+            {theme === 'light' ? <img className="light-mode" /> :  <img className="dark-mode" /> }
+          </button>
         )}
       </ThemeToggler>
     )
