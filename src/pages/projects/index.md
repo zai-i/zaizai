@@ -7,4 +7,4 @@ Lately I’ve been seeking ways to explore all the things I love within little o
 
 For Arabic learning, I have created [a reference tool for Tajweed](http://tajweed.zaiz.ai) (correct pronunciation of the Arabic alphabet) and [Alifba](http://alifba.zaiz.ai), a drag-and-drop educational game for children.
 
-My curiosity about ChatGPT led me to create [Emoji575](http://emoji575.zaiz.ai), which can transform a user’s selection of emojis into a haiku.
+My curiosity about ChatGPT has also led me to create [Emoji575](http://emoji575.zaiz.ai), which can transform a user’s selection of emojis into a haiku.
