@@ -110,6 +110,7 @@ export const pageQuery = graphql`
         socials {
           insta
           linkedin
+          github
         }
       }
     }
