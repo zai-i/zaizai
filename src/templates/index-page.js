@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
                         <h2 className="subtitle">{subheading}</h2>
                         <h3 className="description">{description}</h3>
 
-                        <a href={socials.insta}>insta</a> <a href={socials.linkedin}>linkedin</a>
+                        <a href={socials.insta}>insta</a> <a href={socials.linkedin}>linkedin</a> <a href={socials.github}>github</a>
                       </div>
                     </div>
                   </div>

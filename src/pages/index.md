@@ -10,3 +10,4 @@ description: I’m a front-end developer and (occasional) poet based in London.
 socials:
   insta: https://www.instagram.com/zai.ghazala
   linkedin: https://www.linkedin.com/in/zainabismail
+  github: https://github.com/zai-ghazala
