@@ -23,10 +23,6 @@ class BlogRollTemplate extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span></span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
                   </p>
                 </header>
                 <p>
