@@ -7,6 +7,8 @@ body.light
   --bg-light: #fef8ec
   --text: #75536f
   --logo: url("/img/images/logos/light.png")
+  .mode
+    content: url("/img/images/modes/light.svg")
 
 body.dark
   --pink: #e899b1
@@ -14,6 +16,8 @@ body.dark
   --bg-light: #2b486d
   --text: #b7caaa
   --logo: url("/img/images/logos/dark.png")
+  .mode
+    content: url("/img/images/modes/dark.svg")
 
 @font-face 
   font-family: 'JUSTSans'
@@ -99,12 +103,6 @@ html, body
   background: var(--bg-light) 
   color: var(--text) 
   box-shadow: none
-
-.light-mode
-  content: url("/img/images/modes/light.svg")
-
-.dark-mode
-  content: url("/img/images/modes/dark.svg")
 
 .unstyled
   background: none

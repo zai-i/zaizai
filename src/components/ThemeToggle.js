@@ -12,11 +12,7 @@ export default function ThemeToggle() {
             theme === 'light' ? toggleTheme('dark') : toggleTheme('light')
           }
         >
-          {theme === 'light' ? (
-            <img className='light-mode' alt='switch to dark mode' />
-          ) : (
-            <img className='dark-mode' alt='switch to light mode' />
-          )}
+          <img className='mode' alt='switch mode' />
         </button>
       )}
     </ThemeToggler>
