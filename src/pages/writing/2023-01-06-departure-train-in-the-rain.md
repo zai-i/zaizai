@@ -1,7 +1,6 @@
 ---
 templateKey: blog-post
 title: Departure (Train in the rain)
-date: 2023-01-06T13:16:21.097Z
 tags:
   - freeverse
 ---
