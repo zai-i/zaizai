@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         <section className="section section--gradient">
           <div className="container">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2 className="title is-size-3  is-bold-light">
                 Contact
               </h2>
               <form
