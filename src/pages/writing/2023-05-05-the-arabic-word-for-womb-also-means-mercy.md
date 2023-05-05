@@ -17,6 +17,6 @@ the ambience, a shelter \
 or nest of amnion. 
 
 I﻿n her arms, an arc\
-﻿and a shield are forged. H﻿er melody \
-softens the room \
+﻿and a shield are forged. \
+H﻿er melody softens the room \
 t﻿o a blissful gorge.
