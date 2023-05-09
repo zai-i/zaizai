@@ -1,0 +1,28 @@
+---
+templateKey: blog-post
+title: The sun and my poetry don’t revolve around you
+date: 2023-05-09T18:15:45.359Z
+tags:
+  - prose
+---
+This evening, your texts are gelling to my body's memory like an unwise tattoo. I'm trying to detach from them, to let the words collapse from my mind on shelves of unfair fairytales gone wrong. I was the architect of these rickety shelves, reckless expectations hammered on high. I'm keeping busy. I'm distracted, I'm healthy. I am, I swear. I'm writing some honest, expressive poetry on a generic notes app as the sun is starting to set over the bus station.\
+\
+These rhymes will be symbolically erased, one after another, in time. A more satisfying conclusion than a single thrilling deletion loaded with brute force, this is some kind of calamine-fuelled catharsis, a ritual, burning all of yesterday's generic love letters. Maybe we are all disposable, our shallow online chats archived off to strange deep landfills in the dark, bereft of acknowledgement or apology, when our generic sparkle mutually fades. Everything and nothing, left to stew in a mute, mutual stillness. I think I did mention it was mutual? \
+\
+I dare to reread the light-blue confirmatory ticks à la Nike on WhatsApp, and then your heavy silence. I resent what you never sent me, the way your trainer-shod footsteps must walk tonight, emblazoned with that prestigious iconography, proclaiming an air of undeserved self-validation. For a little time, I indulge in the morbid bliss of my despondency, as long-lettered scarlet buses flicker in and out of my daydreams, to be immediately forgotten. Your shadow stomped on mine, but only briefly. Who cares? My happiness never hinged on your attention. I take a breath. I take the bus.\
+\
+The bus slowly and steadily chews up avenues like a groggy red-painted dragon, as jaded as its perched passengers. A delightful shock of grass, emerald-tipped, fringes the canal like an adventurous hairstyle. Graffiti ephemerally asserts its anonymous, rain-streaked colours, shapes and shades. It is all so beautiful. Ever creeping towards the vague monolith of the Shard in the distance, we approach the generic community hall near the park. I throw my bag, still stupidly heavy with your book, over my shoulder, and rearrange my fur coat, bracing for the chilly nocturnal wind. For once, I can almost see twinkling stars through the scratched pane of the upper deck. And suddenly the eternal winter hits me square in the chest.\
+\
+The community hall is a stout, faintly lilac structure. The posters and adverts chained to the railings glow in divine tangerine parallelograms, which the streetlights cast down from what feels like the near heavens. I can almost taste their brightness in tangible bursts. When I enter, the corridors attempt to mask an entrenched ambiance of clinical utility with children's art. A bamboo literature stand in the corner splits akimbo, flaunting cautionary health pamphlets. But there is some abstract sense of sweetness here, some hope, a little optimism. Maybe it's infused in the unspoilt yellow yolk shade painted on the walls, a sunny new horizon for my peripheral vision to hold. \
+\
+But Tuesday's slam poetry workshop in Room 7 is the idle same-old. As I glance around the room, taking in their doleful eyes, I cannot connect to their literary offerings, their suffering summed up in words. No. I cannot connect to anyone. Everyone's eyes present glitch-bent canvases, curving in and out of focus. Folded in a taut concertina, impossible to splay out on the regimented desks and read. \
+\
+We were sitting in the sun once upon a time. You declared I was a solipsist out of the blue. Matter-of-factly, but maybe you'd dwelt on that ponderous word, felt the weight of each syllable before sibilantly spitting them all out. I said I was sorry, as that seemed like the correct thing to do, then lost my attitude of goodwill. I quipped back about my surprise at your budding vocabulary. You gently pressed a well-worn self-help book into my palms, a gesture full of omen. And now this pseudo-textbook I'm carrying all over London, an alleged deadweight, is imposing some twisted power over me. I don't mean magical. More like the unspoken force of a train as it captures my reflection in its passing spectral light; your words shoved a terrible mirror up in my face and fleetingly illuminated my flaws. And so I force this fickle feeling to endure. I've been carrying your reminder in my bag for several days (and I carry it in my mind.) \
+\
+"I think I carry this inside my mind." The poet sitting next to me echoes, in perfect iambic pentameter, syllables as stressed as her worry lines.  I am, I am, I am. It's uncanny when I'm daydreaming and someone coincidentally chimes in with the exact same word, fresh from my daydreams, at the exact same time. Was she a serendipitous figure from my daydreams? \
+\
+I cut out my crazed inner monologue, and I pay attention to the rest of the performances. But another faceless poet continues the absurd duet, piping up from a desk behind me. "Your texts still gel to me like an unwise tattoo / My apology seemed like the appropriate thing to do."\
+\
+Soliloquy to chorus, plucked fresh and direct like a deceptive flower from the crook of my crooked mind. The generic cookie-cutter mouths around me begin to foam with the same sentences, the same death sentences, in a crude ensemble. It dawns on me that if I choose to blink, they will die.\
+\
+If I choose to blink, I wonder if either they will disappear in this repeated chorus of circus mirrors, or if I will disappear in your non-existent arms.
