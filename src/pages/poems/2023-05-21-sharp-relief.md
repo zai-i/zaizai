@@ -18,8 +18,8 @@ t﻿he fullest breaths, longest breaths, longing\
 a﻿nd loss purified.\
 \
 I﻿ am a teal temple staggered to the canopy\
-&nbsp;&nbsp;&nbsp;&nbsp;staggered\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;staggered.
+&ensp;staggered \
+&emsp; staggered. 
 
 N﻿o doubt, no debt.\
 L﻿et the sheer sky snap up my\
