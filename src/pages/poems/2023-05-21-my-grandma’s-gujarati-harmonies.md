@@ -4,7 +4,8 @@ title: My Grandma’s Gujarati Harmonies
 date: 2023-05-21T18:07:45.226Z
 publication: published by tears in the fence magazine
 publicationHref: https://tearsinthefence.com/
-tags: []
+tags:
+  - freeverse
 ---
 I﻿ remember how I couldn’t hustle\
 G﻿ujarati harmonies\
