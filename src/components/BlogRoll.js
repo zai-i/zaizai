@@ -26,16 +26,15 @@ class BlogRollTemplate extends React.Component {
                   </p>
                 </header>
                 <p>
-                  {post.frontmatter.publication}
+                {post.frontmatter.publication ?
+                  <a href={post.frontmatter.publicationHref} target="_blank">
+                    {post.frontmatter.publication}</a> : null
+                }
                   <br />
                   <br />
-                  {(post.frontmatter.publicationHref != '') ?
-                  <a href={post.frontmatter.publicationHref} className="button" target="_blank">
-                    read
-                  </a> :
                   <Link className="button" to={post.fields.slug}>
                     read
-                  </Link>}
+                  </Link>
                 </p>
               </article>
             </div>
