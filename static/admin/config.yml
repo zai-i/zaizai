@@ -28,7 +28,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Publication Notes", name: "publication", widget: "string" }
+      - { label: "Publication Notes", name: "publication", widget: "markdown" }
       - { label: "Publication Link", name: "publicationHref", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
         
