@@ -26,10 +26,7 @@ class BlogRollTemplate extends React.Component {
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
-                  <br/>
-                  <br/>              
-                  {post.frontmatter.publication ?
+                {post.frontmatter.publication ?
                   <a href={post.frontmatter.publicationHref} target="_blank" rel="noreferrer">
                     {post.frontmatter.publication}</a> : null
                 }
@@ -47,7 +44,7 @@ class BlogRollTemplate extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+IndexBlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -55,8 +52,7 @@ BlogRoll.propTypes = {
   }),
 }
 
-
-export default function BlogRoll() {
+export default function IndexBlogRoll() {
   return (
     <StaticQuery
       query={graphql`
@@ -64,10 +60,10 @@ export default function BlogRoll() {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+            limit: 4
           ) {
             edges {
               node {
-                excerpt(pruneLength: 175)
                 id
                 fields {
                   slug

@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
 
-import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Layout from '../components/Layout';
+import BlogRoll from '../components/IndexBlogRoll';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -14,36 +14,39 @@ export const IndexPageTemplate = ({
   socials,
   description,
 }) => {
-
   return (
     <div>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                  <div className="tile is-ancestor">
-                    <div className="tile is-child portrait">
-                        <PreviewCompatibleImage imageInfo={image}/>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div className='content'>
+                    <div className='tile is-ancestor'>
+                      <div className='tile is-child portrait'>
+                        <PreviewCompatibleImage imageInfo={image} />
                       </div>
-                      <div className="tile is-child is-flex is-flex-direction-column is-justify-content-center">
-                        <h1 className="title" style={{fontFamily: 'Leckerli One'}}>{heading}</h1>
-                        <h2 className="subtitle">{subheading}</h2>
-                        <h3 className="description">{description}</h3>
-
-                        <a href={socials.insta}>insta</a> <a href={socials.linkedin}>linkedin</a> <a href={socials.github}>github</a>
+                      <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center'>
+                        <h1
+                          className='title'
+                          style={{ fontFamily: 'Leckerli One' }}
+                        >
+                          {heading}
+                        </h1>
+                        <h2 className='subtitle'>{subheading}</h2>
+                        <h3 className='description'>{description}</h3>
+                        <a href={socials.insta}>insta</a>{' '}
+                        <a href={socials.linkedin}>linkedin</a>{' '}
+                        <a href={socials.github}>github</a>
                       </div>
                     </div>
                   </div>
-                  <div className="column is-12">
-                    <h3 className="is-bold-light">
-                      Latest Poems
-                    </h3>
+                  <div className='column is-12'>
+                    <h3 className='is-bold-light'>Latest Poems</h3>
                     <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/poems">
+                    <div className='column is-12 has-text-centered'>
+                      <Link className='btn' to='/poems'>
                         read more
                       </Link>
                     </div>
@@ -97,13 +100,18 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         image {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 275, quality: 92, layout: CONSTRAINED, placeholder: BLURRED)
-              }
+          alt
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 275
+                quality: 92
+                layout: CONSTRAINED
+                placeholder: BLURRED
+              )
             }
           }
+        }
         heading
         subheading
         description
