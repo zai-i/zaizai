@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Sharp Relief
 date: 2023-05-21T17:05:58.110Z
-publication: featured in _wretched strangers_, published by boiler house press
+publication: featured in *wretched strangers*, published by boiler house press
 publicationHref: https://www.boilerhouse.press/wretched-strangers
 tags:
   - freeverse
