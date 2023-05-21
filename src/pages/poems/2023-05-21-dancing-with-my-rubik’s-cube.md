@@ -20,4 +20,4 @@ My brain and my cube are devoted to \
 arcane secrets from Youtube, Rubik’s dancing.
 
 As the clock-hands tick, second-hand knowledge\
-fills up the evenings, Zai—quick flicks, dancing.
+fills up the evenings, Zai. Quick flicks, dancing.
