@@ -8,7 +8,7 @@ tags:
   - ghazal
 ---
 A﻿t Abacus Park, I sit and count after dusk.\
-O﻿n smooth plastic beads, our lives are mapped out after dusk.\
+O﻿n smooth plastic beads, our lives are mapped out after dusk.
 
 I﻿ number the hours. Water unspools infinitely in the pool\
 u﻿ntil the park-keeper shuts off the fount after dusk.

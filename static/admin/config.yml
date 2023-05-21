@@ -28,8 +28,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Publication Notes", name: "publication", widget: "string" }
-      - { label: "Publication Link", name: "publicationHref", widget: "string" }
+      - { label: "Publication Notes", name: "publication", widget: "string", required: false }
+      - { label: "Publication Link", name: "publicationHref", widget: "string", required: false}
       - { label: "Tags", name: "tags", widget: "list" }
         
   - name: "pages"
