@@ -26,11 +26,11 @@ class BlogRollTemplate extends React.Component {
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
                   <br />
+                  published by {post.frontmatter.publication}
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    continue
+                    read
                   </Link>
                 </p>
               </article>
@@ -49,7 +49,6 @@ BlogRoll.propTypes = {
   }),
 }
 
-
 export default function BlogRoll() {
   return (
     <StaticQuery
@@ -61,7 +60,6 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 150)
                 id
                 fields {
                   slug
@@ -70,13 +68,14 @@ export default function BlogRoll() {
                   title
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
+                  publication
                 }
               }
             }
           }
         }
       `}
-      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
+      render={(data, count) => <BlogRollTemplate data={data} count={4} />}
     />
   );
 }
