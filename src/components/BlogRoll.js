@@ -29,9 +29,13 @@ class BlogRollTemplate extends React.Component {
                   {post.frontmatter.publication}
                   <br />
                   <br />
+                  {(post.frontmatter.publicationHref != '') ?
+                  <a href={post.frontmatter.publicationHref} className="button" target="_blank">
+                    read
+                  </a> :
                   <Link className="button" to={post.fields.slug}>
                     read
-                  </Link>
+                  </Link>}
                 </p>
               </article>
             </div>
@@ -69,6 +73,7 @@ export default function BlogRoll() {
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   publication
+                  publicationHref
                 }
               }
             }
