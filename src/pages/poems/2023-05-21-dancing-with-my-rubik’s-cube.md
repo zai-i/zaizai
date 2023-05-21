@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Dancing with my Rubik’s Cube
 date: 2023-05-21T17:02:11.800Z
-publication: featured in <em>New Rules</em> anthology on itch.io
+publication: featured in _new rules_, an anthology on itch.io
 tags:
   - ghazal
 ---

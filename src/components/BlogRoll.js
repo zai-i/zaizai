@@ -26,8 +26,8 @@ class BlogRollTemplate extends React.Component {
                   </p>
                 </header>
                 <p>
+                  {post.frontmatter.publication}
                   <br />
-                  published by {post.frontmatter.publication}
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     read
@@ -75,7 +75,7 @@ export default function BlogRoll() {
           }
         }
       `}
-      render={(data, count) => <BlogRollTemplate data={data} count={4} />}
+      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
     />
   );
 }
