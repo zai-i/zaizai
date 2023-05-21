@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Admonition in Comic Sans
 date: 2023-05-21T18:14:22.038Z
-publication: p﻿ublished in streetcake magazine
+publication: p﻿ublished by streetcake
 publicationHref: https://www.streetcakemagazine.com/uploads/2/4/7/1/24713274/issue_68_part2_option__4_.pdf
 tags:
   - freeverse

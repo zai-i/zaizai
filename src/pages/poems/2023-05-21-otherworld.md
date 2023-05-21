@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Otherworld
 date: 2023-05-21T18:17:16.755Z
-publication: p﻿ublished by the fortnightly review
+publication: published by the fortnightly review
 publicationHref: https://fortnightlyreview.co.uk/2016/10/two-villanelles/
 tags:
   - villanelle

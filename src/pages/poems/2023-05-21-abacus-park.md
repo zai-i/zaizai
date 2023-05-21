@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Abacus Park
 date: 2023-05-21T17:53:07.912Z
-publication: published in skin deep magazine
+publication: published by skin deep 
 publicationHref: https://skindeepmag.com/
 tags:
   - ghazal

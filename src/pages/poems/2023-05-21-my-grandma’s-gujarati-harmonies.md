@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: My Grandma’s Gujarati Harmonies
 date: 2023-05-21T18:07:45.226Z
-publication: published by tears in the fence magazine
+publication: published by tears in the fence 
 publicationHref: https://tearsinthefence.com/
 tags:
   - freeverse
