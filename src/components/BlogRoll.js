@@ -55,7 +55,6 @@ BlogRoll.propTypes = {
   }),
 }
 
-
 export default function BlogRoll() {
   return (
     <StaticQuery

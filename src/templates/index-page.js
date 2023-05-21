@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import BlogRoll from '../components/IndexBlogRoll';
+import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 // eslint-disable-next-line
@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className='column is-12'>
                     <h3 className='is-bold-light'>Latest Poems</h3>
-                    <BlogRoll />
+                    <IndexBlogRoll />
                     <div className='column is-12 has-text-centered'>
                       <Link className='btn' to='/poems'>
                         read more
