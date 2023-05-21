@@ -27,18 +27,17 @@ export const IndexPageTemplate = ({
                       <div className='tile is-child portrait'>
                         <PreviewCompatibleImage imageInfo={image} />
                       </div>
-                      <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center'>
+                      <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
                         <h1
                           className='title'
-                          style={{ fontFamily: 'Leckerli One' }}
                         >
                           {heading}
                         </h1>
                         <h2 className='subtitle'>{subheading}</h2>
                         <h3 className='description'>{description}</h3>
-                        <a href={socials.insta}>insta</a>{' '}
-                        <a href={socials.linkedin}>linkedin</a>{' '}
-                        <a href={socials.github}>github</a>
+                        <a href={socials.insta} className="social is-size-4">insta</a>{' '}
+                        <a href={socials.linkedin} className="social is-size-4">linkedin</a>{' '}
+                        <a href={socials.github} className="social is-size-4">github</a>
                       </div>
                     </div>
                   </div>

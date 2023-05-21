@@ -19,21 +19,31 @@ body.dark
   .mode
     content: url("/img/images/modes/dark.svg")
 
-@font-face 
+@font-face
   font-family: 'JUSTSans'
   src: url("/fonts/JUSTSans-Regular.otf")
-@font-face 
+@font-face
   font-family: 'Leckerli One'
   src: url("/fonts/LeckerliOne-Regular.ttf")
+@font-face
+  font-family: 'Anton'
+  src: url("/fonts/Anton-Regular.ttf")
+@font-face
+  font-family: 'Georgia'
+  src: url("/fonts/Georgia-Regular.ttf")
 
-html, body 
-  color: var(--text) 
-  font-family: JUSTSans, Arial, Helvetica, sans-serif
+html, body
+  color: var(--text)
+  font-family: Georgia, 'Times New Roman', Times, serif
   background-color: var(--bg-dark)
-  transition: all 1s 
+  transition: all 1s
 
 .navbar .navbar-menu
-  box-shadow: none 
+  box-shadow: none
+
+.navbar-menu a, .title.is-size-4, .social
+  font-family: Anton, Arial, Helvetica, sans-serif
+  text-transform: uppercase
 
 .navbar
   background: none
@@ -56,22 +66,21 @@ html, body
 .btn, .button.is-link, a.button, button.is-link:hover
   display: inline-block
   padding: 10px
-  font-size: 18px
-  font-size: 1rem
   line-height: 1.25
-  background-color: var(--pink) 
+  background-color: var(--pink)
   text-transform: lowercase
-  border-radius: 0 
+  border-radius: 0
   border-width: 0
   text-decoration: none
   color: var(--bg-light) !important
-  font-family: JUSTSans, Arial, Helvetica, sans-serif
   text-align: center
+  font-family: Anton, Arial, Helvetica, sans-serif
+  text-transform: uppercase
   &:hover
     color: var(--pink)
 
 .margin-top-0
-  margin-top: 0 
+  margin-top: 0
 
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
@@ -80,17 +89,17 @@ html, body
   content: var(--logo)
 
 .navbar-burger
-  height: unset 
+  height: unset
 
 .navbar-burger span
   height: 2px !important
   background-color: var(--pink)
 
 .menu-label
-  font-size: 1em 
+  font-size: 1em
   text-align: left
 .menu-list
-  list-style: none 
+  list-style: none
   text-align: left
 
 // blog roll
@@ -99,8 +108,8 @@ html, body
   margin-bottom: 1em
 
 .blog-list-item
-  background: var(--bg-light) 
-  color: var(--text) 
+  background: var(--bg-light)
+  color: var(--text)
   box-shadow: none
 
 .unstyled
@@ -120,17 +129,16 @@ html, body
 
 // overrides
 
-.label, h1.title, h2.subtitle, h3.description, 
+.label, h1.title, h2.subtitle, h3.description,
 .content h1, .content h2, .content h3, .content h4, .title
-  font-weight: normal 
-  color: var(--text) 
-
+  font-weight: normal
+  color: var(--text)
 
 form
   input.input, textarea.textarea
-    background: var(--bg-light) 
-    color: var(--text) 
-    font-family: JUSTSans, Arial, Helvetica, sans-serif 
+    background: var(--bg-light)
+    color: var(--text)
+    font-family: JUSTSans, Arial, Helvetica, sans-serif
 
 a, a.has-text-primary:hover, a.has-text-primary:focus
   text-decoration: none !important
@@ -140,13 +148,13 @@ a, a.has-text-primary:hover, a.has-text-primary:focus
 
 .has-text-primary
   color: var(--pink) !important
-  
-a.navbar-item 
+
+a.navbar-item
   color: var(--pink)
   font-size: 1.2rem
-   
+
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
-  background-color: var(--pink) 
+  background-color: var(--pink)
   color: var(--bg-light) !important
 
 .portrait img
@@ -155,36 +163,40 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .portrait
   text-align: center
 
-.columns 
-  margin-top: 0 
+.columns
+  margin-top: 0
 
-::selection 
-  background:  var(--pink)
-::-moz-selection 
+::selection
+  background: var(--pink)
+::-moz-selection
   background: var(--pink)
 
-@media screen 
+@media screen
   @media (max-width: 1023px)
-    .navbar-menu 
+    .navbar-menu
       background-color: var(--bg-dark)
       opacity: 0.95
       position: fixed
       inset: 0
-      transition: all 1s 
+      transition: all 1s
+      top: 25%
+    .navbar-menu:before
+      content: ''
+      position: fixed
+      width: 100%
+      height: 25%
+      background-color: var(--bg-dark)
+      opacity: 0.95
+      top: 0
+      left: 0
     .navbar
       position: fixed
       width: 100vw
     .navbar-brand
       z-index: 2
       position: relative
-    @media (orientation: portrait)
-      .navbar-menu 
-        padding-top: 25vh
-    @media (orientation: landscape)
-      .navbar-menu 
-        padding-top: 5vw
 
-button, a 
+button, a
   -webkit-tap-highlight-color: transparent
   -webkit-touch-callout: none
   -webkit-user-select: none
@@ -193,5 +205,11 @@ button, a
   -ms-user-select: none
   user-select: none
 
-button:focus, a:focus 
-  outline: none 
+button:focus, a:focus
+  outline: none
+
+.index .title 
+  font-family: 'Leckerli One', Arial, Helvetica, sans-serif
+
+.index, h3, .publication-notes, h1.is-size-3, h4
+  font-family: JUSTSans, Arial, Helvetica, sans-serif

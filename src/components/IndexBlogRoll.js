@@ -27,7 +27,7 @@ class BlogRollTemplate extends React.Component {
                 </header>
                 <p>
                 {post.frontmatter.publication ?
-                  <a href={post.frontmatter.publicationHref} target="_blank" rel="noreferrer">
+                  <a className="publication-notes" href={post.frontmatter.publicationHref} target="_blank" rel="noreferrer">
                     {post.frontmatter.publication}</a> : null
                 }
                   <br />
