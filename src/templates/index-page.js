@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
                       alt: 'contact',
                       className: 'pen'}} />
                 <h3 className="is-size-4 is-bold-light">
-                  Send a message
+                  Send me a note
                 </h3>
                   </div>
                     <Contact/>
