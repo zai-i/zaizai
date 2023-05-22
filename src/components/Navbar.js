@@ -39,17 +39,12 @@ const Navbar = () => {
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item is-size-4" to="/projects">
-              Projects
-            </Link>
-            </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item is-size-4" to="/poems">
               Poems
             </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item is-size-4" to="/contact">
-              Contact
+            <Link className="navbar-item is-size-4" to="/poems">
+              Online Projects
             </Link>
             </li>
             <li className="navbar-end has-text-centered">
