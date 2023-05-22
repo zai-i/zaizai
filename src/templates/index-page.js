@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
                       image: '/img/images/contact.png',
                       alt: 'contact',
                       className: 'pen'}} />
-                <h3 className="is-size-3 is-bold-light">
+                <h3 className="is-size-4 is-bold-light">
                   Send a message
                 </h3>
                   </div>
