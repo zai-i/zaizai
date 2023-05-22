@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
               </div>
           </div>
                   <div className='column'>
-                    <h3 className='is-bold-light is-size-4'>Latest Poems</h3>
+                    <h2 className='is-bold-light is-size-3'>Latest Poems</h2>
                     <IndexBlogRoll />
                     <div className='column has-text-centered'>
                       <Link className='btn' to='/poems'>
