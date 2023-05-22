@@ -19,5 +19,3 @@ Now I write limericks about how you’re a fool \
 your name \
 either birdsong or a riddle scorched on skin \
 I can’t distinguish
-
-![Admonition in Comic Sans](/img/screenshot-2023-05-22-at-21.48.06.png)
