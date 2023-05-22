@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
               </div>
           </div>
                   <div className='column'>
-                    <h2 className='is-bold-light is-size-3'>Latest Poems</h2>
+                    <h2 className='is-bold-light is-size-4'>Latest Poems</h2>
                     <IndexBlogRoll />
                     <div className='column has-text-centered'>
                       <Link className='btn' to='/poems'>
@@ -63,9 +63,9 @@ export const IndexPageTemplate = ({
                       image: '/img/images/contact.png',
                       alt: 'contact',
                       className: 'pen'}} />
-                <h2 className="title is-size-3 is-bold-light">
+                <h3 className="is-size-3 is-bold-light">
                   Send a message
-                </h2>
+                </h3>
                   </div>
                     <Contact/>
       </section>
