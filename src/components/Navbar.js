@@ -38,12 +38,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item is-size-4" to="/projects">
+            <Link className="navbar-item is-size-4" to="/poems">
               Poems
             </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item is-size-4" to="/poems">
+            <Link className="navbar-item is-size-4" to="/projects">
               Online Projects
             </Link>
             </li>
