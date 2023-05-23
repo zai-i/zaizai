@@ -80,10 +80,10 @@ export const IndexPageTemplate = ({
           <div className="projects">
           {projects.map(x => {
             return <div key={x.name} className="project">
-            <a href={x.website}><img src={x.src} alt={x.name}/></a>
+            <a href={x.website}><img src={x.src} alt={x.name}/>
             <p>
-            <a href={x.website}>{x.name}</a>
-          </p>
+            {x.name}
+          </p></a>
           </div>})}
           </div>
           <div className='column has-text-centered'>
