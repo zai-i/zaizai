@@ -68,17 +68,15 @@ export const IndexPageTemplate = ({
         <hr/>
 
         <div className='column'>
-          <h2 className='is-bold-light is-size-4 has-text-centered'>Latest Poems</h2>
           <IndexBlogRoll />
           <div className='column has-text-centered'>
             <Link className='btn' to='/poems'>
-              see more
+              see more poems
             </Link>
           </div>
         </div>
         <hr/>
         <div className='column'>
-          <h2 className='is-bold-light is-size-4 has-text-centered'>Featured Projects</h2>
           <div className="projects">
           {projects.map(x => {
             return <div key={x.name} className="project">
@@ -90,7 +88,7 @@ export const IndexPageTemplate = ({
           </div>
           <div className='column has-text-centered'>
             <Link className='btn' to='/projects'>
-              see more
+              see more projects
             </Link>
           </div>
       </div>
@@ -98,7 +96,7 @@ export const IndexPageTemplate = ({
       <div className='column has-text-centered'>
         <img src="/img/images/contact.png" alt="contact" className="pen"/>
         <h3 className="is-size-4 is-bold-light">
-          Send me a note
+          Send me a note 
         </h3>
       </div>
       <Contact />
