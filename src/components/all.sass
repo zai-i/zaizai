@@ -238,3 +238,35 @@ button:focus, a:focus
 .pen
   width: 50px
   margin-bottom: 1.5rem
+
+.projects 
+  @media (orientation: landscape) and (min-width: 1023px)
+    display: flex
+    flex-direction: row
+    width: fit-content
+    gap: 5rem
+    margin: 0 auto
+
+.project 
+  background: url('/img/images/swirl.png')
+  background-size: 290px 290px
+  width: 290px
+  height: 290px
+  margin: 2.5rem auto
+  padding-top: 1.85rem
+  text-align: center
+
+.project img
+  height: 190px
+  border-radius: 6px
+
+.project a 
+  color: var(--bg-dark) !important
+  font-family: JUSTSans, Arial, Helvetica, sans-serif
+
+hr
+  height: 2px
+  color: var(--pink)
+  background: var(--pink)
+  font-size: 0
+  border: 0

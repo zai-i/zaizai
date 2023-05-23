@@ -4,9 +4,9 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="/fonts/JUSTSans-Regualr.otf"
+      href="/fonts/JUSTSans-Regular.otf"
       as="font"
-      type="font/ttf"
+      type="font/otf"
       crossOrigin="anonymous"
       key="justSansFont"
     />,

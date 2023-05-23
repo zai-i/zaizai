@@ -7,6 +7,23 @@ import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
 
+const projects = [{
+  name: 'emoji575',
+  src: '/img/images/screenshots/emoji575.png',
+  website: 'https://www.emoji575.zaiz.ai',
+  },
+  {
+  name: 'hummingbird',
+  src: '/img/images/screenshots/hummingbird.png',
+  website: 'https://www.hummingbird.zaiz.ai',
+  },
+  {
+  name: 'tajweed',
+  src: '/img/images/screenshots/tajweed.png',
+  website: 'https://www.tajweed.zaiz.ai',
+  }
+]
+
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -16,7 +33,7 @@ export const IndexPageTemplate = ({
   description,
 }) => {
   return (
-    <div>
+    <div><div>
       <section className='section section--gradient'>
         <div className='container'>
           <div className='section'>
@@ -26,7 +43,7 @@ export const IndexPageTemplate = ({
                   <div className='content'>
                     <div className='tile is-ancestor'>
                       <div className='tile is-child portrait'>
-                        <PreviewCompatibleImage imageInfo={image}/>
+                        <PreviewCompatibleImage imageInfo={image} />
                       </div>
                       <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
                         <h1
@@ -42,33 +59,51 @@ export const IndexPageTemplate = ({
                       </div>
                     </div>
                   </div>
-                  </div>
-                  </div>
                 </div>
               </div>
+            </div>
           </div>
-                  <div className='column'>
-                    <h2 className='is-bold-light is-size-4'>Latest Poems</h2>
-                    <IndexBlogRoll />
-                    <div className='column has-text-centered'>
-                      <Link className='btn' to='/poems'>
-                        read more
-                      </Link>
-                </div>
-                </div>
-                <br/>
-                <br/>
-                <div className='column has-text-centered'>
-                  <PreviewCompatibleImage imageInfo={{
-                      image: '/img/images/contact.png',
-                      alt: 'contact',
-                      className: 'pen'}} />
-                <h3 className="is-size-4 is-bold-light">
-                  Send me a note
-                </h3>
-                  </div>
-                    <Contact/>
+        </div>
+
+        <hr/>
+
+        <div className='column'>
+          <h2 className='is-bold-light is-size-4 has-text-centered'>Latest Poems</h2>
+          <IndexBlogRoll />
+          <div className='column has-text-centered'>
+            <Link className='btn' to='/poems'>
+              see more
+            </Link>
+          </div>
+        </div>
+        <hr/>
+        <div className='column'>
+          <h2 className='is-bold-light is-size-4 has-text-centered'>Featured Projects</h2>
+          <div className="projects">
+          {projects.map(x => {
+            return <div key={x.name} className="project">
+            <a href={x.website}><img src={x.src} alt={x.name}/></a>
+            <p>
+            <a href={x.website}>{x.name}</a>
+          </p>
+          </div>})}
+          </div>
+          <div className='column has-text-centered'>
+            <Link className='btn' to='/projects'>
+              see more
+            </Link>
+          </div>
+      </div>
+      <hr/>
+      <div className='column has-text-centered'>
+        <img src="/img/images/contact.png" alt="contact" className="pen"/>
+        <h3 className="is-size-4 is-bold-light">
+          Send me a note
+        </h3>
+      </div>
+      <Contact />
       </section>
+    </div>
     </div>
   );
 };
