@@ -135,11 +135,6 @@ html, body
   font-weight: normal
   color: var(--text)
 
-form
-  input.input, textarea.textarea
-    background: var(--bg-light)
-    color: var(--text)
-
 a, a.has-text-primary:hover, a.has-text-primary:focus
   text-decoration: none !important
   color: var(--pink) !important
@@ -191,6 +186,18 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     @media (orientation: landscape)
       .navbar-menu 
         padding-top: 15%
+
+.input
+  background: var(--bg-light)
+  color: var(--text)
+  border: 1px solid var(--pink)
+
+.input:active, .input:focus, .is-active.input
+    border-color: var(--text)
+    box-shadow: 0 0 0 0.125em var(--bg-dark)
+
+.input:hover 
+    border-color: var(--text)
 
 .field input
   border-radius: 0 
