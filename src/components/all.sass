@@ -63,21 +63,22 @@ html, body
     margin-bottom: 1.5rem
     margin-top: 0
 
-.btn, .button, a.button, .button:hover
+.btn, .button
   display: inline-block
   padding: 10px
   line-height: 1.25
   background-color: var(--pink)
-  text-transform: lowercase
   border-radius: 0
   border-width: 0
-  text-decoration: none
   color: var(--bg-light) !important
   text-align: center
   font-family: Anton, Arial, Helvetica, sans-serif
   text-transform: uppercase
+  font-weight: 400 !important
   &:hover
     color: var(--pink)
+    border: none
+    opacity: 0.75
 
 .margin-top-0
   margin-top: 0
@@ -190,6 +191,23 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     @media (orientation: landscape)
       .navbar-menu 
         padding-top: 15%
+
+.field input
+  border-radius: 0 
+  
+@media (orientation: landscape)
+  form
+    display: flex
+    align-content: center
+    margin: 0 auto
+    width: fit-content
+  .field
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+  .field.submit 
+    margin-top: 1.25rem
+    justify-content: center
 
 button, a
   -webkit-tap-highlight-color: transparent

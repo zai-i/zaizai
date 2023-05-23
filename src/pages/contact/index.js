@@ -88,8 +88,8 @@ export default class Index extends React.Component {
                     Message
                   </label>
                   <div className="control">
-                    <textarea
-                      className="textarea"
+                    <input
+                      className="input"
                       name={"message"}
                       onChange={this.handleChange}
                       id={"message"}
@@ -97,7 +97,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field submit">
                   <button className="button" type="submit">
                     Submit
                   </button>
