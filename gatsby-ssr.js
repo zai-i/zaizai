@@ -4,11 +4,11 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="/fonts/Inter-VariableFont_wght.ttf"
+      href="/fonts/JUSTSans-Regualr.otf"
       as="font"
       type="font/ttf"
       crossOrigin="anonymous"
-      key="interFont"
+      key="justSansFont"
     />,
     <link
     rel="preload"
@@ -16,7 +16,23 @@ export const onRenderBody = ({ setHeadComponents }) => {
     as="font"
     type="font/ttf"
     crossOrigin="anonymous"
-    key="leckerliFont"
+    key="leckerliOneFont"
+  />,
+    <link
+    rel="preload"
+    href="/fonts/Georgia-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous"
+    key="georgiaFont"
+  />,
+    <link
+    rel="preload"
+    href="/fonts/Anton-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous"
+    key="antonFont"
   />,
   ])
 }
