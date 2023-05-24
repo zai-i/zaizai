@@ -196,14 +196,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   border-radius: 0 
   border: 1px solid var(--pink)
 
-/* Only show invalid ring while not focused */
-.field input:not(:focus):not(:placeholder-shown):invalid 
-  border: 1px solid red
-
-/* Only show valid ring while not focused and if a value is entered */
-/* :empty won't work here as that targets elements that have no childeren. Therefore we abuse :placeholder-shown */
-.field input:not(:focus):not(:placeholder-shown):valid 
-  border: 1px solid green
+.field input:focus, .field input:active
+  border: 1px solid var(--text)
+  box-shadow: none
 
 @media (orientation: landscape)
   form
