@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
-import FadeInSection from '../components/FadeInSection';
 
 const projects = [{
   name: 'emoji575',
