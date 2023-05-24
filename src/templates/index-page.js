@@ -96,7 +96,7 @@ export const IndexPageTemplate = ({
       <div className='column has-text-centered'>
         <img src="/img/images/contact.png" alt="contact" className="pen"/>
         <h3 className="is-size-4 is-bold-light">
-          Send me a note 
+          send me a note 
         </h3>
       </div>
       <Contact />

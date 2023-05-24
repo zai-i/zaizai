@@ -6,18 +6,20 @@ body.light
   --bg-dark: #f7ecdd
   --bg-light: #fef8ec
   --text: #75536f
-  --logo: url("/img/images/logos/light.png")
+  --logo: url("/img/images/modes/light/logo.png")
   .mode
-    content: url("/img/images/modes/light.svg")
+    content: url("/img/images/modes/light/icon.svg")
+  --swirl: url("/img/images/modes/light/swirl.png")
 
 body.dark
   --pink: #e899b1
   --bg-dark: #183154
   --bg-light: #2b486d
   --text: #b7caaa
-  --logo: url("/img/images/logos/dark.png")
+  --logo: url("/img/images/modes/dark/logo.png")
   .mode
-    content: url("/img/images/modes/dark.svg")
+    content: url("/img/images/modes/dark/icon.svg")
+  --swirl: url("/img/images/modes/dark/swirl.png")
 
 @font-face
   font-family: 'JUSTSans'
@@ -249,7 +251,7 @@ button:focus, a:focus
     margin: 0 auto
 
 .project 
-  background: url('/img/images/swirl.png')
+  background: var(--swirl)
   background-size: 290px 290px
   width: 290px
   height: 290px
@@ -262,7 +264,6 @@ button:focus, a:focus
   border-radius: 6px
 
 .project a 
-  color: var(--bg-dark) !important
   font-family: JUSTSans, Arial, Helvetica, sans-serif
 
 hr
