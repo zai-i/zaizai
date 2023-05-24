@@ -189,22 +189,22 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       .navbar-menu 
         padding-top: 15%
 
-.input
+.field input
   background: var(--bg-light)
   color: var(--text)
-  border: 1px solid var(--pink)
   font-family: Georgia, 'Times New Roman', Times, serif
-
-.input:active, .input:focus, .is-active.input
-    border-color: var(--text)
-    box-shadow: 0 0 0 0.125em var(--bg-dark)
-
-.input:hover 
-    border-color: var(--text)
-
-.field input
   border-radius: 0 
-  
+  border: 1px solid var(--pink)
+
+/* Only show invalid ring while not focused */
+.field input:not(:focus):not(:placeholder-shown):invalid 
+  border: 1px solid red
+
+/* Only show valid ring while not focused and if a value is entered */
+/* :empty won't work here as that targets elements that have no childeren. Therefore we abuse :placeholder-shown */
+.field input:not(:focus):not(:placeholder-shown):valid 
+  border: 1px solid green
+
 @media (orientation: landscape)
   form
     display: flex
