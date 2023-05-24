@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
+import FadeInSection from '../components/FadeInSection';
 
 const projects = [{
   name: 'emoji575',
@@ -33,7 +34,6 @@ export const IndexPageTemplate = ({
   description,
 }) => {
   return (
-    <div><div>
       <section className='section section--gradient'>
         <div className='container'>
           <div className='section'>
@@ -64,9 +64,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-
         <hr/>
-
         <div className='column'>
           <IndexBlogRoll />
           <div className='column has-text-centered'>
@@ -101,8 +99,6 @@ export const IndexPageTemplate = ({
       </div>
       <Contact />
       </section>
-    </div>
-    </div>
   );
 };
 

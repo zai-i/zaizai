@@ -34,8 +34,6 @@ export default class Index extends React.Component {
 
   render() {
     return (
-        <section className="section section--gradient">
-          <div className="container">
             <div className="section">
               <form
                 name="contact"
@@ -107,8 +105,6 @@ export default class Index extends React.Component {
                 </div>
               </form>
             </div>
-          </div>
-        </section>
     );
   }
 }
