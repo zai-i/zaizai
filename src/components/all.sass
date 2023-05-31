@@ -69,7 +69,7 @@ html, body
   display: inline-block
   padding: 10px
   line-height: 1.25
-  background-color: var(--pink)
+  background-image: linear-gradient(#f7c0d0, #d893a8)
   border-radius: 0
   border-width: 0
   color: var(--bg-light) !important
@@ -246,13 +246,27 @@ button:focus, a:focus
     margin: 0 auto
 
 .project 
-  background: var(--swirl)
-  background-size: 290px 290px
+  background-image: linear-gradient(#f7c0d0, #d893a8)
+  border-radius: 9999px
   width: 290px
   height: 290px
   margin: 2.5rem auto
   padding-top: 1.85rem
   text-align: center
+  border: 2px solid var(--text)
+  position: relative
+
+.project:after
+  content: ''
+  position: absolute
+  width: 290px
+  height: 290px
+  border-radius: 9999px
+  border: 2px solid var(--text)
+  left: -10px
+  top: -10px
+  z-index: 1
+  pointer-events: none
 
 .project img
   height: 190px
@@ -260,6 +274,7 @@ button:focus, a:focus
 
 .project a 
   font-family: JUSTSans, Arial, Helvetica, sans-serif
+  color: var(--bg-light) !important
 
 hr
   height: 2px
