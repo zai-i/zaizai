@@ -40,6 +40,8 @@ html, body
   font-family: Georgia, 'Times New Roman', Times, serif
   background-color: var(--bg-dark)
   transition: all 1s
+  position: relative
+  min-height: 100vh
 
 .navbar .navbar-menu
   box-shadow: none
@@ -54,6 +56,7 @@ html, body
 
 .navbar
   background: none
+  z-index: 9999
 
 .content .taglist
   list-style: none
@@ -98,11 +101,21 @@ html, body
   content: var(--logo)
 
 .navbar-burger
-  height: unset
+  height: 42px
+  width: 42px
+  top: 10px
+  right: 10px
+  background-color: var(--pink)
+  border: 1px solid var(--text)
+  border-radius: 9999px
+  z-index: 9999
+
+.navbar-burger:hover
+    background-color: var(--pink)
 
 .navbar-burger span
   height: 2px !important
-  background-color: var(--pink)
+  background-color: var(--text)
 
 .menu-label
   font-size: 1em
@@ -263,17 +276,27 @@ button:focus, a:focus
   border: 2px solid var(--text)
   position: relative
 
-.project:after
+.project:after, .navbar-burger:after
   content: ''
   position: absolute
-  width: 290px
-  height: 290px
   border-radius: 9999px
-  border: 2px solid var(--text)
+  z-index: 5
+  pointer-events: none
+
+.project:after
+  width: 290px
+  height: 290px 
   left: -10px
   top: -10px
-  z-index: 1
-  pointer-events: none
+  border: 2px solid var(--text)
+
+.navbar-burger:after
+  width: 42px
+  height: 42px 
+  left: -5px
+  top: -5px
+  border: 1px solid var(--text)
+  z-index: 5
 
 .project img
   height: 190px
@@ -301,3 +324,29 @@ hr
   opacity: 1
   transform: none
   visibility: visible
+
+.corner 
+  background: url("/img/images/henna.png")
+  width: 150px
+  height: 150px
+  position: absolute
+  z-index: 9998
+
+.top-left
+  top: 0
+  left: 0
+  transform: rotate(180deg)
+
+.top-right
+  top: 0 
+  right: 0
+  transform: rotate(270deg)
+
+.bottom-left
+  bottom: 0vh
+  left: 0
+  transform: rotate(90deg)
+
+.bottom-right
+  bottom: 0vh
+  right: 0
