@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
+import FadeInSection from '../components/FadeInSection';
 
 const projects = [{
   name: 'emoji575',
@@ -39,7 +40,6 @@ export const IndexPageTemplate = ({
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
-                  <div className='content'>
                     <div className='tile is-ancestor'>
                       <div className='tile is-child portrait'>
                         <PreviewCompatibleImage imageInfo={image} />
@@ -57,13 +57,13 @@ export const IndexPageTemplate = ({
                         <a href={socials.github} className="social is-size-4">github</a>
                       </div>
                     </div>
+                   </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
         <hr/>
+        <FadeInSection>
         <div className='column'>
           <IndexBlogRoll />
           <div className='column has-text-centered'>
@@ -73,6 +73,8 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <hr/>
+        </FadeInSection>
+        <FadeInSection>
         <div className='column'>
           <div className="projects">
           {projects.map(x => {
@@ -90,6 +92,8 @@ export const IndexPageTemplate = ({
           </div>
       </div>
       <hr/>
+      </FadeInSection>
+      <FadeInSection>
       <div className='column has-text-centered'>
         <img src="/img/images/contact.png" alt="contact" className="pen"/>
         <h3 className="is-size-4 is-bold-light">
@@ -97,6 +101,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
       <Contact />
+      </FadeInSection>
       </section>
   );
 };
