@@ -9,7 +9,6 @@ body.light
   --logo: url("/img/images/modes/light/logo.png")
   .mode
     content: url("/img/images/modes/light/icon.svg")
-
 body.dark
   --bg-dark: #183154
   --bg-light: #2b486d
@@ -17,7 +16,6 @@ body.dark
   --logo: url("/img/images/modes/dark/logo.png")
   .mode
     content: url("/img/images/modes/dark/icon.svg")
-
 body
   --pink: #e899b1
   --gradient: linear-gradient(#efc8d4, #e6a4b7, #ea8faa)
@@ -108,13 +106,13 @@ body
   width: 42px
   top: 10px
   right: 10px
-  background-color: var(--bg-dark)
+  background-color: var(--pink)
   border: 1.5px solid var(--text)
   border-radius: 9999px
   z-index: 9999
 
 .navbar-burger:hover
-  background-color: var(--bg-dark)
+  background-color: var(--pink)
   opacity: 0.75
 
 .navbar-burger span
@@ -288,6 +286,7 @@ button:focus, a:focus
   z-index: -1
   top: -80px 
   left: -80px
+  opacity: 0.5
 
 .project:after, .navbar-burger:after
   content: ''
@@ -343,6 +342,7 @@ hr
   height: 200px
   position: absolute
   z-index: 9998
+  opacity: 0.5
 
 .top-left
   top: 0
