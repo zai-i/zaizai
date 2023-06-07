@@ -7,9 +7,8 @@ import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
 import FadeInSection from '../components/FadeInSection';
-import Sketch from '../components/sketch'
-import loadable from '@loadable/component';
-const LoadableP5 = loadable(() => import("@p5-wrapper/react"));
+import SketchWrapper from '../components/Sketch/SketchWrapper'
+import Sketch from '../components/Sketch/Sketch'
 
 const projects = [{
   name: 'emoji575',
@@ -89,7 +88,7 @@ export const IndexPageTemplate = ({
           </div>})}
           <div className="project">
           <div className="sketch">
-          <LoadableP5 sketch={Sketch}/>
+          <SketchWrapper sketch={Sketch}/>
           </div>
           <span>dreaming up more plans!<br/>sketch in the empty space</span>
           </div>

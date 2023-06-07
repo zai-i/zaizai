@@ -1,4 +1,3 @@
-
 export default function sketch(p5) {
   let baseCount, baseSize, c, n, off, x, y, px, py;
 
