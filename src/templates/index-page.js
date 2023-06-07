@@ -7,6 +7,8 @@ import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact'
 import FadeInSection from '../components/FadeInSection';
+import { ReactP5Wrapper } from "@p5-wrapper/react";
+import Sketch from '../components/sketch'
 
 const projects = [{
   name: 'emoji575',
@@ -57,7 +59,7 @@ export const IndexPageTemplate = ({
                         <a href={socials.github} className="social is-size-4">github</a>
                       </div>
                     </div>
-                   </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -84,6 +86,11 @@ export const IndexPageTemplate = ({
             {x.name}
           </p></a>
           </div>})}
+          <div className="project">
+          <div className="sketch">
+          <ReactP5Wrapper sketch={Sketch}/></div>
+          <span>dreaming up more plans!<br/>sketch in the empty space</span>
+          </div>
           </div>
           <div className='column has-text-centered'>
             <Link className='btn' to='/projects'>
