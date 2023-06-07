@@ -95,7 +95,7 @@ body
 
 .navbar-burger
   background-color: var(--bg-dark)
-  border: 1px solid var(--text)
+  border: 3px dotted var(--text)
   border-radius: 9999px
   height: 40px
   right: -25px
@@ -105,7 +105,6 @@ body
   padding-top: 50px
   padding-right: 50px
   box-sizing: content-box
-  position: relative
 
 .navbar-burger:hover
   background-color: var(--bg-dark)
@@ -196,9 +195,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     .navbar
       position: fixed
       width: 100vw
-    .navbar-brand
-      z-index: 2
-      position: relative
     @media (orientation: portrait)
       .navbar-menu 
         padding-top: 60%
@@ -275,7 +271,7 @@ button:focus, a:focus
   height: 290px
   padding-top: 1.85rem
   text-align: center
-  border: 1px solid var(--text)
+  border: 3px dotted var(--text)
   position: relative
 
 .project:before
@@ -286,28 +282,6 @@ button:focus, a:focus
   left: -75px
   opacity: 0.5
 
-.project:after, .navbar-burger:after
-  content: ''
-  position: absolute
-  border-radius: 9999px
-  z-index: 5
-  pointer-events: none
-
-.project:after
-  width: 290px
-  height: 290px 
-  left: -10px
-  top: -10px
-  border: 1px solid var(--text)
-
-.navbar-burger:after
-  width: 80px
-  height: 80px 
-  left: -5px
-  top: 3px
-  border: 1px solid var(--text)
-  z-index: 5
-
 .project img
   height: 190px
   border-radius: 6px
@@ -317,10 +291,10 @@ button:focus, a:focus
 
 hr
   height: 2px
-  color: var(--text)
-  background: var(--text)
+  color: none
+  background: none
   font-size: 0
-  border: 0
+  border-top: 5px dotted var(--text)
 
 .fade-in-section 
   opacity: 0
