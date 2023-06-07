@@ -6,14 +6,12 @@ body.light
   --bg-dark: #f7ecdd
   --bg-light: #fef8ec
   --text: #75536f
-  --logo: url("/img/images/modes/light/logo.png")
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
   --bg-dark: #183154
   --bg-light: #2b486d
   --text: #b7caaa
-  --logo: url("/img/images/modes/dark/logo.png")
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
@@ -95,14 +93,8 @@ body
 .margin-top-0
   margin-top: 0
 
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
-
-.navbar-brand span.logo
-  content: var(--logo)
-
 .navbar-burger
-  background-color: var(--bg-light)
+  background-color: var(--bg-dark)
   border: 1px solid var(--text)
   border-radius: 9999px
   height: 40px
@@ -116,7 +108,7 @@ body
   position: relative
 
 .navbar-burger:hover
-  background-color: var(--bg-light)
+  background-color: var(--bg-dark)
   opacity: 0.75
 
 .navbar-burger span

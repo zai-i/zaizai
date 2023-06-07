@@ -13,9 +13,6 @@ const Navbar = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
-            <span className="logo" style={{ width: "50px" }} />
-          </Link>
           {/* Hamburger menu */}
           <button
             className={`navbar-burger burger ${isActive && "is-active"}`}
