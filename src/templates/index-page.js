@@ -90,7 +90,7 @@ export const IndexPageTemplate = ({
           <div className="sketch">
           <SketchWrapper sketch={Sketch}/>
           </div>
-          <span>Dreaming up more plans!<br/>Draw something new in the empty space</span>
+          <span>Dreaming up more plans.<br/>Watch this space / draw something new in it!</span>
           </div>
           </div>
           <div className='column has-text-centered'>
@@ -105,7 +105,7 @@ export const IndexPageTemplate = ({
       <div className='column has-text-centered'>
         <img src="/img/images/contact.png" alt="contact" className="pen"/>
         <h3 className="is-size-4 is-bold-light">
-          send me a note 
+          send me a message
         </h3>
       </div>
       <Contact />

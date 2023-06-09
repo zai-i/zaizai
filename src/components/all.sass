@@ -2,21 +2,30 @@
 
 // Config vars
 body.light
-  --pink: #e899b1
-  --bg-dark: #f7ecdd
-  --bg-light: #fef8ec
+  --bg-dark: #ece5da
+  --bg-light: #faf4e8
   --text: #75536f
   .mode
     content: url("/img/images/modes/light/icon.svg")
+  .corner
+    mix-blend-mode: color-dodge
+    opacity: 0.8
+  .btn, .button
+    color: #FFF !important
 body.dark
   --bg-dark: #183154
   --bg-light: #2b486d
   --text: #b7caaa
   .mode
     content: url("/img/images/modes/dark/icon.svg")
+  .corner
+    mix-blend-mode: color-burn
+    opacity: 0.5
+  .btn, .button
+    color: #111 !important
 body
-  --pink: #e899b1
-  --gradient: linear-gradient(#efc8d4, #e6a4b7, #ea8faa)
+  --pink: #de8dec
+  --gradient: linear-gradient(#e6a4b7, #de8dec)
 
 @font-face
   font-family: 'JUSTSans'
@@ -35,11 +44,11 @@ html, body
   color: var(--text)
   font-family: Georgia, 'Times New Roman', Times, serif
   background-color: var(--bg-dark)
-  transition: all 1s
+  transition: all 0.3s
   position: relative
   min-height: 100vh
 
-body 
+body
   padding-bottom: 200px
 
 .navbar .navbar-menu
@@ -196,7 +205,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       position: fixed
       width: 100vw
     @media (orientation: portrait)
-      .navbar-menu 
+      .navbar-menu
         padding-top: 60%
       .project
         margin: 8rem auto
@@ -204,14 +213,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       .section
         padding: 5.5em 1.5rem
     @media (orientation: landscape)
-      .navbar-menu 
+      .navbar-menu
         padding-top: 15%
 
 .field input
   background: var(--bg-light)
   color: var(--text)
   font-family: Georgia, 'Times New Roman', Times, serif
-  border-radius: 0 
+  border-radius: 0
   border: 1px solid var(--text)
 
 .field input:focus, .field input:active
@@ -228,7 +237,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     display: flex
     flex-direction: column
     justify-content: space-evenly
-  .field.submit 
+  .field.submit
     margin-top: 1.25rem
     justify-content: center
 
@@ -244,7 +253,7 @@ button, a
 button:focus, a:focus
   outline: none
 
-.index .title 
+.index .title
   font-family: 'Leckerli One', Arial, Helvetica, sans-serif
 
 .index, h3, h2, .publication-notes, h1, h4, .taglist
@@ -255,7 +264,7 @@ button:focus, a:focus
   margin-bottom: 1.5rem
   transform: rotate(180deg)
 
-.projects 
+.projects
   margin: 3rem auto
   @media (orientation: landscape) and (min-width: 1023px)
     display: flex
@@ -278,15 +287,15 @@ button:focus, a:focus
   content: url("/img/images/henna.png")
   position: absolute
   z-index: -1
-  top: -75px 
+  top: -75px
   left: -75px
-  opacity: 0.5
+  opacity: 0.75
 
 .project img
   height: 190px
   border-radius: 6px
 
-.project a 
+.project a
   font-family: JUSTSans, Arial, Helvetica, sans-serif
 
 hr
@@ -296,7 +305,7 @@ hr
   font-size: 0
   border-top: 5px dotted var(--text)
 
-.fade-in-section 
+.fade-in-section
   opacity: 0
   transform: translateY(20vh)
   visibility: hidden
@@ -308,12 +317,12 @@ hr
   transform: none
   visibility: visible
 
-.corner 
+.corner
   background: url("/img/images/henna.png")
   width: 200px
   height: 200px
   position: absolute
-  opacity: 0.5
+  opacity: 0.25
 
 .top-left
   top: 0
@@ -321,7 +330,7 @@ hr
   transform: rotate(180deg)
 
 .top-right
-  top: 0 
+  top: 0
   right: 0
   transform: rotate(270deg)
 
@@ -334,7 +343,7 @@ hr
   bottom: 0vh
   right: 0
 
-.project span 
+.project span
   width: 290px
   text-align: center
   display: block
