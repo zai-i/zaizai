@@ -19,8 +19,8 @@ body.dark
   .mode
     content: url("/img/images/modes/dark/icon.svg")
   .corner
-    mix-blend-mode: color-burn
-    opacity: 0.5
+    mix-blend-mode: multiply
+    opacity: 1
   .btn, .button
     color: #111 !important
 body
@@ -47,6 +47,7 @@ html, body
   transition: all 0.3s
   position: relative
   min-height: 100vh
+  overflow-x: hidden
 
 body
   padding-bottom: 200px
@@ -105,15 +106,11 @@ body
 .navbar-burger
   background-color: var(--bg-dark)
   border: 3px dotted var(--text)
-  border-radius: 0 100px 0 9999px
-  height: 40px
-  right: -25px
-  top: -25px
-  width: 40px
+  border-radius: 0 0 0 9999px
+  right: 0
+  top: 0
   z-index: 9999
-  padding-top: 50px
-  padding-right: 65px
-  box-sizing: content-box
+  padding: 30px
 
 .navbar-burger:hover
   background-color: var(--bg-dark)
@@ -169,7 +166,7 @@ a, a.has-text-primary:hover, a.has-text-primary:focus
     opacity: 0.75
 
 .has-text-primary
-  color: var(--pink) !important
+  color: #e899b1 !important
 
 a.navbar-item
   color: var(--pink)

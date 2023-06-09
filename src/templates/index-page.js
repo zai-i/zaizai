@@ -90,7 +90,7 @@ export const IndexPageTemplate = ({
           <div className="sketch">
           <SketchWrapper sketch={Sketch}/>
           </div>
-          <span>Dreaming up more plans.<br/>Watch this space / draw something new in it!</span>
+          <span>Dreaming up more plans.<br/>Watch this space / draw something in it!</span>
           </div>
           </div>
           <div className='column has-text-centered'>
