@@ -104,7 +104,7 @@ export const IndexPageTemplate = ({
       <FadeInSection>
       <div className='column has-text-centered'>
         <img src="/img/images/contact.png" alt="contact" className="pen"/>
-        <h3 className="is-size-4 is-bold-light">
+        <h3 className="is-size-4 is-bold-light self-modern">
           send me a message
         </h3>
       </div>

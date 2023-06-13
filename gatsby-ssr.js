@@ -4,27 +4,19 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       rel="preload"
-      href="/fonts/JUSTSans-Regular.otf"
+      href="/fonts/SelfModern-Italic.ttf"
       as="font"
-      type="font/otf"
+      type="font/ttf"
       crossOrigin="anonymous"
-      key="justSansFont"
+      key="selfModernFont"
     />,
     <link
     rel="preload"
-    href="/fonts/LeckerliOne-Regular.ttf"
+    href="/fonts/SourceSans3-VariableFont_wght.ttf"
     as="font"
     type="font/ttf"
     crossOrigin="anonymous"
-    key="leckerliOneFont"
-  />,
-    <link
-    rel="preload"
-    href="/fonts/Georgia-Regular.ttf"
-    as="font"
-    type="font/ttf"
-    crossOrigin="anonymous"
-    key="georgiaFont"
+    key="sourceSansFont"
   />,
     <link
     rel="preload"
