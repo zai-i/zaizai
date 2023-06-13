@@ -4,6 +4,7 @@
 body.light
   --bg-dark: linear-gradient(to bottom, #b2dac8, #dfe3c5)
   --text: #4b4b4b
+  --link: #9f1566
   --contrast: #f4e3e3
   --box: rgba(255, 243, 243, 0.5)
   .mode
@@ -12,15 +13,17 @@ body.dark
   --bg-dark: linear-gradient(to bottom, #11494d, #648291)
   --text: #f4e3e3
   --contrast: #4b4b4b
+  --link: #e6f3a6
   --box: rgba(16, 17, 18, 0.35)
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
-  --pink: #de8dec
+  --pink1: #ff91d1
+  --pink2: #e6a4b7
   --grey: #4b4b4b
   --white: #f4e3e3
   --project: rgba(230, 242, 232, 0.95)
-  --gradient: linear-gradient(#e6a4b7, #de8dec)
+  --gradient: linear-gradient(to right, var(--pink1), var(--pink2))
 
 @font-face
   font-family: 'Source Sans'
@@ -55,10 +58,11 @@ body
 .navbar-menu a, .title.is-size-4, .social
   font-family: Anton, Arial, Helvetica, sans-serif
   text-transform: uppercase
-  background-color: var(--pink)
+  background-color: var(--pink2)
   background-image: var(--gradient)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+  font-weight: normal
 
 .navbar
   background: none
@@ -83,7 +87,7 @@ body
   display: inline-block
   padding: 10px
   line-height: 1.25
-  background-color: var(--pink)
+  background-color: var(--pink2)
   background-image: var(--gradient)
   border-radius: 0
   border-width: 0
@@ -93,7 +97,7 @@ body
   text-transform: uppercase
   font-weight: 400 !important
   &:hover
-    color: var(--pink)
+    color: var(--pink2)
     border: none
     opacity: 0.75
 
@@ -153,20 +157,19 @@ body
 
 a, a.has-text-primary:hover, a.has-text-primary:focus
   text-decoration: none !important
-  color: var(--pink) !important
+  color: var(--link) !important
   font-weight: normal !important
   &:hover, &:focus
     opacity: 0.75
 
 .has-text-primary
-  color: #e899b1 !important
+  color: var(--pink2) !important
 
 a.navbar-item
-  color: var(--pink)
   font-size: 1.2rem
 
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
-  background-color: var(--pink)
+  background-color: var(--pink2)
   color: var(--text) !important
 
 .portrait img
@@ -179,9 +182,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   margin-top: 0
 
 ::selection
-  background: var(--pink)
+  background: var(--pink2)
 ::-moz-selection
-  background: var(--pink)
+  background: var(--pink2)
 
 @media screen
   @media (max-width: 1023px)
@@ -214,14 +217,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .field input
   background: var(--white)
-  color: var(--text)
+  color: var(--grey)
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
   border-radius: 0
-  border: 1px solid var(--text)
+  border: 1px solid var(--grey)
 
 .field input:focus, .field input:active
-  border: 1px solid var(--pink)
+  border: 1px solid var(--pink2)
   box-shadow: none
 
 @media (orientation: landscape)
@@ -259,9 +262,6 @@ button:focus, a:focus
 .index .title, .index .subtitle, .index .description
   line-height: 1.5
 
-.index, h3, h2, .publication-notes, h1, h4, .taglist
-  font-family: Source Sans, Arial, Helvetica, sans-serif
-
 .pen
   width: 50px
   margin-bottom: 1.5rem
@@ -296,6 +296,9 @@ button:focus, a:focus
 .project img
   height: 190px
   border-radius: 6px
+
+.project a
+  color: var(--grey) !important
 
 hr
   height: 2px
@@ -355,6 +358,6 @@ hr
   position: relative
   top: -30px
 
-h1, h2, h3, h4 h5, h6
+h1, h2, h3, h4, h5, h6
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
