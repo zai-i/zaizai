@@ -6,7 +6,7 @@ body.light
   --text: #4b4b4b
   --contrast: #f4e3e3
   --box: rgba(255, 243, 243, 0.5)
-  .mode 
+  .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
   --bg-dark: linear-gradient(to bottom, #11494d, #648291)
@@ -44,6 +44,10 @@ html, body
 
 body
   padding-bottom: 200px
+
+.label, h1.title, h2.subtitle, h3.description,
+.content h1, .content h2, .content h3, .content h4, .title
+  color: var(--text)
 
 .navbar .navbar-menu
   box-shadow: none
@@ -147,14 +151,10 @@ body
 
 // overrides
 
-.label, h1.title, h2.subtitle, h3.description,
-.content h1, .content h2, .content h3, .content h4, .title
-  font-weight: normal
-  color: var(--text)
-
 a, a.has-text-primary:hover, a.has-text-primary:focus
   text-decoration: none !important
   color: var(--pink) !important
+  font-weight: normal !important
   &:hover, &:focus
     opacity: 0.75
 
@@ -214,11 +214,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .field input
   background: var(--white)
-  color: #4b4b4b
+  color: var(--text)
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
   border-radius: 0
-  border: 1px solid var(--contrast)
+  border: 1px solid var(--text)
 
 .field input:focus, .field input:active
   border: 1px solid var(--pink)
@@ -250,16 +250,14 @@ button, a
 button:focus, a:focus
   outline: none
 
-.index .title, .index .subtitle, .index .description, .self-modern
-  font-family: 'Self Modern', Arial, Helvetica, sans-serif
-  font-weight: bold
-  line-height: 1.5
-
 .index .title
   font-size: 4em
 
 .index .subtitle
   font-size: 3em
+
+.index .title, .index .subtitle, .index .description
+  line-height: 1.5
 
 .index, h3, h2, .publication-notes, h1, h4, .taglist
   font-family: Source Sans, Arial, Helvetica, sans-serif
@@ -356,3 +354,7 @@ hr
   overflow: hidden
   position: relative
   top: -30px
+
+h1, h2, h3, h4 h5, h6
+  font-family: 'Self Modern', Arial, Helvetica, sans-serif
+  font-weight: bold
