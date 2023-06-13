@@ -2,20 +2,23 @@
 
 // Config vars
 body.light
-  --bg-dark: #eae2d2
+  --bg-dark: linear-gradient(to bottom, #d2eae7, var(--bg-light))
   --bg-light: #fff3f3
   --text: #75536f
+  --btn: #d2eae7
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
-  --bg-dark: #262c42
-  --bg-light: #3b4c54
+  --bg-dark: linear-gradient(to bottom, #262c42, var(--bg-light))
+  --bg-light: #527180
   --text: #b7caaa
+  --btn: #262c42
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
   --pink: #de8dec
   --gradient: linear-gradient(#e6a4b7, #de8dec)
+  --border: turquoise
 
 @font-face
   font-family: 'JUSTSans'
@@ -33,7 +36,9 @@ body
 html, body
   color: var(--text)
   font-family: Georgia, 'Times New Roman', Times, serif
-  background-color: var(--bg-dark)
+  background: var(--bg-dark)
+  background-size: contain
+  background-attachment: fixed
   transition: all 0.3s
   position: relative
   min-height: 100vh
@@ -94,9 +99,9 @@ body
   margin-top: 0
 
 .navbar-burger
-  background-color: var(--bg-dark)
-  border-left: 3px dotted var(--text)
-  border-bottom: 3px dotted var(--text)
+  background: var(--btn)
+  border-left: 3px dotted var(--border)
+  border-bottom: 3px dotted var(--border)
   border-radius: 0 0 0 9999px
   right: -10px
   top: -10px
@@ -104,12 +109,12 @@ body
   padding: 40px
 
 .navbar-burger:hover
-  background-color: var(--bg-dark)
+  background: var(--btn)
   opacity: 0.75
 
 .navbar-burger span
   height: 2px !important
-  background-color: var(--text)
+  background-color: var(--border)
 
 .menu-label
   font-size: 1em
@@ -184,7 +189,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 @media screen
   @media (max-width: 1023px)
     .navbar-menu
-      background-color: var(--bg-dark)
+      background: var(--bg-dark)
       opacity: 0.95
       position: fixed
       inset: 0
@@ -209,10 +214,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   color: var(--text)
   font-family: Georgia, 'Times New Roman', Times, serif
   border-radius: 0
-  border: 1px solid var(--text)
+  border: 1px solid var(--border)
 
 .field input:focus, .field input:active
-  border: 1px solid var(--pink)
+  border: 1px solid var(--border)
   box-shadow: none
 
 @media (orientation: landscape)
@@ -268,7 +273,7 @@ button:focus, a:focus
   height: 290px
   padding-top: 1.85rem
   text-align: center
-  border: 3px dotted var(--text)
+  border: 3px dotted var(--border)
   position: relative
 
 .project:before
@@ -291,7 +296,7 @@ hr
   color: none
   background: none
   font-size: 0
-  border-top: 5px dotted var(--text)
+  border-top: 5px dotted var(--border)
 
 .fade-in-section
   opacity: 0
@@ -344,8 +349,5 @@ hr
   position: relative
   top: -30px
 
-.blog-list-item
-  .btn, .button
-    color: var(--bg-light) !important
 .btn, .button
-  color: var(--bg-dark) !important
+  color: var(--bg-light) !important
