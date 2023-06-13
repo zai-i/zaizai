@@ -5,7 +5,7 @@ const SketchWrapper = (props) => {
   const sketchRef = useRef()
   useEffect(() => {
     new p5(props.sketch, sketchRef.current)
-  }, [])
+  }, [props.sketch])
   return <div ref={sketchRef} />
 }
 
