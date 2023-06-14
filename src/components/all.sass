@@ -196,33 +196,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 ::-moz-selection
   background: var(--main-pink)
 
-@media screen
-  @media (max-width: 1023px)
-    .navbar-menu
-      background: var(--bg-light)
-      opacity: 0.95
-      position: fixed
-      inset: 0
-      transition: all 1s
-    .navbar
-      position: fixed
-      width: 100vw
-    .navbar-menu button
-      margin-top: 1rem
-    @media (orientation: portrait)
-      .navbar-menu
-        padding-top: 60%
-      .project
-        margin: 8rem auto
-        width: 100vw
-      .section
-        padding: 2.5rem 1.5rem 
-      .blog-roll
-        padding-top: 1.5rem 
-    @media (orientation: landscape)
-      .navbar-menu
-        padding-top: 15%
-
 .field label
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
@@ -242,20 +215,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .field input:hover
   border: 1px solid var(--main-pink)
-  
-@media (orientation: landscape)
-  form
-    display: flex
-    align-content: center
-    margin: 0 auto
-    width: fit-content
-  .field
-    display: flex
-    flex-direction: column
-    justify-content: space-evenly
-  .field.submit
-    margin-top: 1.25rem
-    justify-content: center
 
 button, a
   -webkit-tap-highlight-color: transparent
@@ -286,7 +245,7 @@ button:focus, a:focus
 
 .projects
   margin: 3rem auto
-  @media (orientation: landscape) and (min-width: 1023px)
+  @media (orientation: landscape) and (min-width: 1281px)
     display: flex
     flex-direction: row
     width: fit-content
@@ -296,11 +255,11 @@ button:focus, a:focus
 .project
   background: var(--gradient)
   border-radius: 9999px
-  width: 275px
-  height: 275px
   padding-top: 1.85rem
   text-align: center
   position: relative
+  width: 275px
+  height: 275px
   a
     color: var(--contrast) !important
   
@@ -321,16 +280,21 @@ button:focus, a:focus
   left: 0
 
 .project:before
-  content: url("/img/images/henna.png")
+  background-image: url("/img/images/henna.png")
+  background-size: cover
   position: absolute
   z-index: -1
-  top: -75px
-  left: -75px
+  top: -20%
+  left: -20%
   opacity: 0.75 
   filter: grayscale(1)
+  width: 140%
+  height: 140%
+  content: ""
 
 .project img
-  height: 190px
+  height: 75%
+  position: relative
   border-radius: 6px
 
 hr
@@ -368,3 +332,47 @@ hr
 h1, h2, h3, h4, h5, h6
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
+
+@media screen
+  @media (max-width: 1023px)
+    .navbar-menu
+      background: var(--bg-light)
+      opacity: 0.95
+      position: fixed
+      inset: 0
+      transition: all 1s
+    .navbar
+      position: fixed
+      width: 100vw
+    .navbar-menu button
+      margin-top: 1rem
+    @media (orientation: portrait)
+      .navbar-menu
+        padding-top: 60%
+      .section
+        padding: 2.5rem 1.5rem 
+      .blog-roll
+        padding-top: 1.5rem 
+    @media (orientation: landscape)
+      .navbar-menu
+        padding-top: 15%
+  @media (min-width: 768px)
+    .project
+      width: 275px 
+      height: 275px
+  @media (orientation: landscape)
+    form
+      display: flex
+      align-content: center
+      margin: 0 auto
+      width: fit-content
+    .field
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+    .field.submit
+      margin-top: 1.25rem
+      justify-content: center
+  @media (max-width: 1281px)
+    .project
+      margin: 8rem auto
