@@ -2,7 +2,7 @@ export default function sketch(p5) {
   let baseCount, baseSize, c, n, off, x, y, px, py;
 
   p5.setup = function () {
-    p5.createCanvas(275, 270);
+    p5.createCanvas(275, 275);
     p5.colorMode(p5.HSB, 100);
 
     p5.noFill();
