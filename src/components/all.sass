@@ -2,7 +2,6 @@
 
 // Config vars
 body.light
-  --bg-dark: #f1f0f0
   --bg-light: #d2efe1
   --text: #4b4b4b
   --link: #e6a4b7
@@ -13,8 +12,7 @@ body.light
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
-  --bg-dark: #464646
-  --bg-light: #8ba9aa
+  --bg-light: #637576
   --text: #f4e3e3
   --contrast: #4b4b4b
   --link: #e6a4b7
@@ -41,7 +39,7 @@ body
 html, body
   color: var(--text)
   font-family: Source Sans, Arial, Helvetica, sans-serif
-  background: var(--bg-dark)
+  background: var(--bg-light)
   background-attachment: fixed
   transition: all 0.3s
   position: relative
@@ -191,7 +189,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 @media screen
   @media (max-width: 1023px)
     .navbar-menu
-      background: var(--bg-dark)
+      background: var(--bg-light)
       opacity: 0.95
       position: fixed
       inset: 0
@@ -220,8 +218,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   font-weight: bold
 
 .field input
-  background: var(--text)
-  border: 1px solid var(--contrast)
+  background: var(--white)
+  border: 1px solid var(--main-pink)
   color: var(--grey)
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
