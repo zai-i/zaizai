@@ -20,8 +20,9 @@ body.dark
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
-  --main-pink: #e6a4b7
-  --purple: linear-gradient(to left,var(--bg-light),#b6b8e1,#b9a0c6, #e6a4b7)
+  --main-pink: rgb(230, 164, 183)
+  --main-pink-alpha: rgba(230, 164, 183, 0.5)
+  --gradient: linear-gradient(to left,var(--bg-light),#b6b8e1,#b9a0c6, #e6a4b7)
   --grey: #4b4b4b
   --white: #f1f0f0
 
@@ -215,9 +216,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
         margin: 8rem auto
         width: 100vw
       .section
-        padding: 5.5rem 1.5rem 
+        padding: 2.5rem 1.5rem 
       .blog-roll
-        padding-top: 5.5rem 
+        padding-top: 1.5rem 
     @media (orientation: landscape)
       .navbar-menu
         padding-top: 15%
@@ -237,7 +238,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .field input:focus, .field input:active
   border: 1px solid var(--main-pink)
+  box-shadow: 0 0 0 0.125em var(--main-pink-alpha)
 
+.field input:hover
+  border: 1px solid var(--main-pink)
+  
 @media (orientation: landscape)
   form
     display: flex
@@ -289,7 +294,7 @@ button:focus, a:focus
     margin: 5rem auto
 
 .project
-  background: var(--purple)
+  background: var(--gradient)
   border-radius: 9999px
   width: 275px
   height: 275px
