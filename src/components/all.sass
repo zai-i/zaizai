@@ -2,7 +2,7 @@
 
 // Config vars
 body.light
-  --bg-light: #d2efe1
+  --bg-light: #e1f7e1
   --text: #4b4b4b
   --link: #e6a4b7
   --contrast: #f4e3e3
@@ -23,6 +23,7 @@ body.dark
     content: url("/img/images/modes/dark/icon.svg")
 body
   --main-pink: #e6a4b7
+  --purple: #e0e1f2
   --grey: #4b4b4b
   --white: #f1f0f0
 
@@ -106,7 +107,7 @@ body
   margin-top: 0
 
 .navbar-burger
-  background: var(--text)
+  background: var(--main-pink)
   border-radius: 0 0 0 9999px
   right: -10px
   top: -10px
@@ -114,7 +115,7 @@ body
   padding: 40px
 
 .navbar-burger:hover
-  background: var(--text)
+  background: var(--main-pink)
   opacity: 0.75
 
 .navbar-burger span
@@ -280,15 +281,16 @@ button:focus, a:focus
     margin: 5rem auto
 
 .project
-  background-color: var(--bg-light)
+  background-color: var(--purple)
+  border: 1px solid var(--text)
   border-radius: 9999px
-  width: 290px
-  height: 290px
+  width: 275px
+  height: 275px
   padding-top: 1.85rem
   text-align: center
   position: relative
   a
-    color: var(--text) !important
+    color: var(--grey) !important
   
 .project:last-of-type
   background-color: var(--white)
