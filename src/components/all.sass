@@ -3,6 +3,7 @@
 // Config vars
 body.light
   --bg-dark: #bbd4c8
+  --bg-light: #d2efe1
   --text: #4b4b4b
   --link: #a0576f
   --contrast: #f4e3e3
@@ -13,6 +14,7 @@ body.light
     content: url("/img/images/modes/light/icon.svg")
 body.dark
   --bg-dark: #567a7b
+  --bg-light: #8ba9aa
   --text: #f4e3e3
   --contrast: #4b4b4b
   --link: #f1b2b2
@@ -25,7 +27,6 @@ body
   --main-pink: #e6a4b7
   --grey: #4b4b4b
   --white: #f4e3e3
-  --project: rgba(230, 242, 232, 0.95)
 
 @font-face
   font-family: 'Source Sans'
@@ -280,13 +281,18 @@ button:focus, a:focus
     margin: 5rem auto
 
 .project
-  background-color: var(--project)
+  background-color: var(--bg-light)
   border-radius: 9999px
   width: 290px
   height: 290px
   padding-top: 1.85rem
   text-align: center
   position: relative
+  a
+    color: var(--text) !important
+  
+.project:last-of-type
+  background-color: var(--white)
 
 .project:before
   content: url("/img/images/henna.png")
