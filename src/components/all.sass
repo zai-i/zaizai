@@ -2,19 +2,23 @@
 
 // Config vars
 body.light
-  --bg-dark: #b2dac8
+  --bg-dark: #bbd4c8
   --text: #4b4b4b
-  --link: #cf8fe4
+  --link: #934976
   --contrast: #f4e3e3
   --box: rgba(255, 243, 243, 0.5)
+  .corner
+    opacity: 0.35
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
-  --bg-dark: #11494d
+  --bg-dark: #567a7b
   --text: #f4e3e3
   --contrast: #4b4b4b
-  --link: #d79dfd
+  --link: #f9fa9c
   --box: rgba(16, 17, 18, 0.35)
+  .corner
+    opacity: 0.15
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
@@ -116,7 +120,7 @@ body
 
 .navbar-burger span
   height: 2px !important
-  background-color: var(--white)
+  background-color: var(--contrast)
 
 .menu-label
   font-size: 1em
@@ -320,7 +324,6 @@ hr
   width: 200px
   height: 200px
   position: absolute
-  opacity: 0.35
 
 .top-left
   top: 0
