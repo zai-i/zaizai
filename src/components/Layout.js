@@ -46,10 +46,6 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
       </Helmet>
         <Navbar />
-        <div className="corner top-left"></div>
-        <div className="corner top-right"></div>
-        <div className="corner bottom-left"></div>
-        <div className="corner bottom-right"></div>
         <div>{children}</div>
         </div>
   );
