@@ -5,25 +5,23 @@ body.light
   --bg-light: #e1f7e1
   --text: #4b4b4b
   --link: #e6a4b7
-  --contrast: #f4e3e3
-  --box: rgba(255, 243, 243, 0.5)
+  --contrast: #f1f0f0
   .corner
     opacity: 0.35
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
   --bg-light: #637576
-  --text: #f4e3e3
+  --text: #f1f0f0
   --contrast: #4b4b4b
   --link: #e6a4b7
-  --box: rgba(16, 17, 18, 0.35)
   .corner
     opacity: 0.25
   .mode
     content: url("/img/images/modes/dark/icon.svg")
 body
   --main-pink: #e6a4b7
-  --purple: #e0e1f2
+  --purple: linear-gradient(to right, #e0e1f2,#c9b7d3)
   --grey: #4b4b4b
   --white: #f1f0f0
 
@@ -90,24 +88,23 @@ body
   display: inline-block
   padding: 10px
   line-height: 1.25
-  background-color: var(--box)
+  background: var(--purple)
   border-radius: 0
-  border-width: 0
-  color: var(--link) !important
+  color: var(--grey) !important
+  border: none
   text-align: center
   font-family: Anton, Arial, Helvetica, sans-serif
   text-transform: uppercase
   font-weight: 400 !important
   &:hover
-    color: var(--link)
-    border: none
+    color: var(--grey)
     opacity: 0.75
 
 .margin-top-0
   margin-top: 0
 
 .navbar-burger
-  background: var(--main-pink)
+  background: var(--purple)
   border-radius: 0 0 0 9999px
   right: -10px
   top: -10px
@@ -115,7 +112,7 @@ body
   padding: 40px
 
 .navbar-burger:hover
-  background: var(--main-pink)
+  background: var(--purple)
   opacity: 0.75
 
 .navbar-burger span
@@ -135,8 +132,9 @@ body
   margin-bottom: 1em
 
 .blog-list-item
-  background: var(--box)
+  background: var(--contrast)
   color: var(--text)
+  border: 1px solid var(--grey)
   border-radius: 10px
   box-shadow: none
 
@@ -225,10 +223,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
   border-radius: 0
+  box-shadow: none
 
 .field input:focus, .field input:active
-  border: 1px solid var(--contrast)
-  box-shadow: none
+  border: 1px solid var(--main-pink)
 
 @media (orientation: landscape)
   form
@@ -281,7 +279,7 @@ button:focus, a:focus
     margin: 5rem auto
 
 .project
-  background-color: var(--purple)
+  background: var(--purple)
   border: 1px solid var(--grey)
   border-radius: 9999px
   width: 275px
