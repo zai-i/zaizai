@@ -2,10 +2,10 @@
 
 // Config vars
 body.light
-  --bg-dark: #bbd4c8
+  --bg-dark: #f1f0f0
   --bg-light: #d2efe1
   --text: #4b4b4b
-  --link: #a0576f
+  --link: #e6a4b7
   --contrast: #f4e3e3
   --box: rgba(255, 243, 243, 0.5)
   .corner
@@ -13,11 +13,11 @@ body.light
   .mode
     content: url("/img/images/modes/light/icon.svg")
 body.dark
-  --bg-dark: #567a7b
+  --bg-dark: #464646
   --bg-light: #8ba9aa
   --text: #f4e3e3
   --contrast: #4b4b4b
-  --link: #f1b2b2
+  --link: #e6a4b7
   --box: rgba(16, 17, 18, 0.35)
   .corner
     opacity: 0.25
@@ -26,7 +26,7 @@ body.dark
 body
   --main-pink: #e6a4b7
   --grey: #4b4b4b
-  --white: #f4e3e3
+  --white: #f1f0f0
 
 @font-face
   font-family: 'Source Sans'
@@ -221,6 +221,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .field input
   background: var(--white)
+  border: 1px solid var(--bg-dark)
   color: var(--grey)
   font-family: 'Self Modern', Arial, Helvetica, sans-serif
   font-weight: bold
