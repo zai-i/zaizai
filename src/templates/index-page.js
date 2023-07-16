@@ -99,16 +99,17 @@ export const IndexPageTemplate = ({
             </Link>
           </div>
       </div>
-      <hr/>
       </FadeInSection>
       <FadeInSection>
-      <div className='column has-text-centered'>
-        <img src="/img/images/contact.png" alt="contact" className="pen"/>
+      <div className='column has-text-centered section--contact'>
+
+        <div className="pen"><img src="/img/images/contact.png" alt="contact"/></div>
         <h3 className="is-size-4 is-bold-light">
           send me a message
         </h3>
-      </div>
       <Contact />
+      </div>
+
       </FadeInSection>
       </section>
   );
