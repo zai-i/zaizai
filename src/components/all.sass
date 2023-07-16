@@ -10,8 +10,6 @@ body.light
     opacity: 0.35
   .mode
     content: url("/img/images/modes/light/icon.svg")
-  .pen img
-    filter: grayscale(100%) contrast(200%) invert(100%)
 body.dark
   --bg-light: #637576
   --text: #f1f0f0
@@ -21,8 +19,7 @@ body.dark
     opacity: 0.25
   .mode
     content: url("/img/images/modes/dark/icon.svg")
-  .pen img
-    filter: grayscale(100%) contrast(200%) 
+
 body
   --main-pink: rgb(230, 164, 183)
   --main-pink-alpha: rgba(230, 164, 183, 0.5)
@@ -112,7 +109,6 @@ html, body
     opacity: 0.75
 
 .section--contact button 
-   color: var(--text) !important
    font-family: 'Self Modern', Arial, Helvetica, sans-serif
    text-transform: lowercase
    font-weight: 800 !important
@@ -245,18 +241,11 @@ button:focus, a:focus
 
 div.pen 
   width: 100px
-  border-radius: 9999px
   height: 100px
-  display: flex
-  position: relative
-  justify-content: center
-  align-items: center
-  margin: 0 auto
-  margin-bottom: 1em
+  margin: 2em auto
 
 div.pen img
   width: 30%
-  transform: rotate(180deg)
 
 .projects
   margin: 3rem auto
@@ -398,9 +387,11 @@ h1, h2, h3, h4, h5, h6
   margin-left: -50vw
   left: 50%
   border-top: 2px solid var(--main-pink)
+  color: #4b4b4b
 
 .section--index
   padding-bottom: 0
 
 label
   text-align: left
+  color: #4b4b4b !important
