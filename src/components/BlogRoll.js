@@ -6,7 +6,7 @@ class BlogRollTemplate extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    
     return (
       <div className="columns is-multiline blog-roll">
         {posts &&

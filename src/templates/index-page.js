@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
   description,
 }) => {
   return (
-      <section className='section section--gradient'>
+      <section className='section section--gradient section--index'>
         <div className='container'>
           <div className='section'>
             <div className='columns'>
