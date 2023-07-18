@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import FadeInSection from './FadeInSection'
 
 class BlogRollTemplate extends React.Component {
   render() {
@@ -11,7 +12,8 @@ class BlogRollTemplate extends React.Component {
       <div className="columns is-multiline blog-roll">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <FadeInSection isTiled>
+            <div className="is-parent column is-12" key={post.id}>
               <article
                 className="blog-list-item tile is-child box notification"
               >
@@ -41,6 +43,8 @@ class BlogRollTemplate extends React.Component {
                 </p>
               </article>
             </div>
+
+        </FadeInSection>
           ))}
       </div>
     )

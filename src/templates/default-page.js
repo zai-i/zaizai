@@ -4,25 +4,29 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+import FadeInSection from "../components/FadeInSection";
+
 // eslint-disable-next-line
 export const DefaultPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h1 className="title is-size-3 is-bold-light">
-                {title}
-              </h1>
-              <PageContent className="content" content={content} />
+    <FadeInSection>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <h1 className="title is-size-3 is-bold-light">
+                  {title}
+                </h1>
+                <PageContent className="content" content={content} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </FadeInSection>
   );
 };
 
