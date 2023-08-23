@@ -258,13 +258,14 @@ div.pen img
   width: 30%
 
 .projects
-  margin: 3rem auto
-  @media (orientation: landscape) and (min-width: 1275px)
-    display: flex
+  display: flex
+  width: fit-content
+  margin: 0 auto
+  flex-direction: column
+  @media (min-width: 1650px)
     flex-direction: row
-    width: fit-content
+    margin: 3rem auto
     gap: 8.5rem
-    margin: 5rem auto
 
 .project
   background: var(--gradient)
