@@ -262,10 +262,13 @@ div.pen img
   width: fit-content
   margin: 0 auto
   flex-direction: column
-  @media (min-width: 1650px)
+  margin: 3rem auto
+  @media (min-width: 1250px)
     flex-direction: row
-    margin: 3rem auto
-    gap: 8.5rem
+    flex-wrap: wrap
+    justify-content: center
+    .newline
+      width: 100%
 
 .project
   background: var(--gradient)
@@ -275,6 +278,7 @@ div.pen img
   position: relative
   width: 275px
   height: 275px
+  margin: 4rem
   a
     color: var(--contrast) !important
   
@@ -387,10 +391,6 @@ h1, h2, h3, h4, h5, h6
         padding-top: 1.5rem 
       .navbar-menu
         padding-top: 60%
-  @media (min-width: 768px)
-    .project
-      width: 275px 
-      height: 275px
   @media (orientation: landscape)
     form
       display: flex
@@ -407,9 +407,6 @@ h1, h2, h3, h4, h5, h6
   @media (orientation: landscape) and (max-width: 1281px)
     .navbar-menu
       padding-top: 15%
-  @media (max-width: 1281px)
-    .project
-      margin: 8rem auto
   @media (orientation: landscape) and (min-width: 1281px)
     .is-tiled
       width: 50%   

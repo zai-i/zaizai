@@ -11,11 +11,6 @@ import SketchWrapper from '../components/Sketch/SketchWrapper'
 import Sketch from '../components/Sketch/Sketch'
 
 const projects = [{
-  name: 'emoji575',
-  src: '/img/images/screenshots/emoji575.png',
-  website: 'https://www.emoji575.zaiz.ai',
-  },
-  {
   name: 'hummingbird',
   src: '/img/images/screenshots/hummingbird.png',
   website: 'https://www.hummingbird.zaiz.ai',
@@ -86,6 +81,7 @@ export const IndexPageTemplate = ({
             {x.name}
           </p></a>
           </div>})}
+          <div className="newline"></div>
           <div className="project">
           <div className="sketch">
           <SketchWrapper sketch={Sketch}/>
