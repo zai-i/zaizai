@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Abacus Park
 date: 2023-05-21T17:53:07.912Z
-publication: published by skin deep 
+publication: published by skin deep
 publicationHref: https://skindeepmag.com/
 tags:
   - ghazal
@@ -23,4 +23,4 @@ E﻿ach second we shared screeches across the bamboo,\
 t﻿he beads slide through. Peacocks’ colours black out after dusk.
 
 M﻿y smooth beads belie the rough reality of us.\
-T﻿ally them up, Zai the swollen shouts after dusk.
+T﻿ally them up, Zai, the swollen shouts after dusk.
