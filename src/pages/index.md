@@ -6,7 +6,7 @@ image:
   alt: portrait
 heading: Hey
 subheading: I’m Zainab Ismail.
-description: I’m a front-end developer and (occasional) poet based in London.
+description: I’m a front-end developer and poet from London.
 socials:
   insta: https://www.instagram.com/zai.ghazala
   linkedin: https://www.linkedin.com/in/zainabismail
