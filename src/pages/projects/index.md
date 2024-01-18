@@ -15,4 +15,4 @@ My [Codepen account](https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj0zMjk
 
 I’ve also made a Twitter bot (now unfortunately inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
-As you can possibly tell, I’m incredibly inspired by design and the potential to bring true beauty into existence when programming.
+As you can hopefully tell, I’m incredibly inspired by design and the potential to bring true beauty into existence when programming.
