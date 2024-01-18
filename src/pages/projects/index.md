@@ -7,11 +7,11 @@ Lately I’ve been seeking ways to explore all the things I love within little o
 
 My curiosity about ChatGPT has also led me to create [Emoji575](https://www.emoji575.zaiz.ai), which can transform a chosen combination of emojis into a haiku. Although my ChatGPT subscription has recently terminated, the interface is still available to view.
 
-[Lyriki](http://lyriki.zaiz.ai) is another text generation experiment which hopes to find serendipitous rhyming couplets made from Wikipedia articles and famous sonnets.
+[Lyriki](http://lyriki.zaiz.ai) is another text generation experiment which hopes to find serendipitous rhyming couplets made from Wikipedia articles and famous sonnets. 
 
 For Arabic learning, I have created [a reference tool for Tajweed](https://www.tajweed.zaiz.ai) (correct pronunciation of the Arabic alphabet) and [Alifba](http://alifba.zaiz.ai), a drag-and-drop educational game for children.
 
-My Codepen account [Alifba](https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj0zMjk2NDAzNg==) exhibits some quick experiments, mainly conducted in CSS.
+My [Codepen](https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj0zMjk2NDAzNg==) account exhibits some quick experiments, mainly conducted in CSS.
 
 I’ve also made a Twitter bot (now unfortunately inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
