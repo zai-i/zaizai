@@ -13,6 +13,6 @@ For Arabic learning, I have created [a reference tool for Tajweed](https://www.t
 
 My [Codepen account](https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj0zMjk2NDAzNg==) exhibits some assorted experiments.
 
-I’ve also made a Twitter bot (now unfortunately inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
+I’ve also made a Twitter bot (now inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
 As you can hopefully tell, I’m incredibly inspired by design and the potential to bring true beauty into existence when programming.
