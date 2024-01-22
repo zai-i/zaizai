@@ -11,7 +11,7 @@ My curiosity about ChatGPT has also led me to create [Emoji575](https://www.emoj
 
 For Arabic learning, I have created [a reference tool for Tajweed](https://www.tajweed.zaiz.ai) (correct pronunciation of the Arabic alphabet) and [Alifba](http://alifba.zaiz.ai), a drag-and-drop educational game for children.
 
-My [Codepen account](https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj0zMjk2NDAzNg==) exhibits some assorted experiments.
+My [Codepen account](https://codepen.io/zai24) exhibits some assorted experiments.
 
 I’ve also made a Twitter bot (now inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
