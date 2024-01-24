@@ -20,8 +20,10 @@ class BlogRollTemplate extends React.Component {
           </a>
         </FadeInSection>
         <FadeInSection>
+        <div className="reviews">
         <p className="title">“Zainab Ismail’s lush and startling debut explores her tricultural heritage, what she dubs ‘the taproot tapestry’ that ‘wove the heavens in her mouth.’ She may not be able to speak her home in Gujarati harmonies or Arabic auxiliaries, but she is firmly planted in poetry’s formal earth.” Cherry Smyth</p>
         <p className="title">“Reading the unghosting of a new poetic tongue is an ecstatic experience! ‘Lotuses of language’ do ‘float along’ within this collection and I defy anyone not to be moved by their intricacy and beauty.” Emily Critchley</p>
+        </div>
         </FadeInSection>
         {posts &&
           posts.map(({ node: post }) => (
