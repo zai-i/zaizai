@@ -1,53 +1,69 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import FadeInSection from './FadeInSection'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql, StaticQuery } from 'gatsby';
+import FadeInSection from './FadeInSection';
+import image from '../img/ecstaticmotion.jpg';
 
 class BlogRollTemplate extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
-    
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+  
     return (
-      <div className="columns is-multiline blog-roll">
+      <div className='columns is-multiline blog-roll'>
+        <FadeInSection>
+        <a href='https://marblepoetry.com/product/ecstatic-motion-zainab-ismail/'>
+        <h2 className="is-2 title ecstaticmotion">ECSTATIC MOTION AVAILABLE TO BUY ONLINE</h2>
+              <figure>
+                <img className="is-rounded" src={image} alt="Ecstatic Motion published by Marble Poetry 2020" />
+              </figure>
+          </a>
+        </FadeInSection>
+        <FadeInSection>
+        <p className="title">“Zainab Ismail’s lush and startling debut explores her tricultural heritage, what she dubs ‘the taproot tapestry’ that ‘wove the heavens in her mouth.’ She may not be able to speak her home in Gujarati harmonies or Arabic auxiliaries, but she is firmly planted in poetry’s formal earth.” Cherry Smyth</p>
+        <p className="title">“Reading the unghosting of a new poetic tongue is an ecstatic experience! ‘Lotuses of language’ do ‘float along’ within this collection and I defy anyone not to be moved by their intricacy and beauty.” Emily Critchley</p>
+        </FadeInSection>
         {posts &&
           posts.map(({ node: post }) => (
             <FadeInSection isTiled key={post.ids}>
-            <div className="is-parent column is-12" key={post.id}>
-              <article
-                className="blog-list-item tile is-child box notification"
-              >
-                <header>
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
+              <div className='is-parent column is-12' key={post.id}>
+                <article className='blog-list-item tile is-child box notification'>
+                  <header>
+                    <p className='post-meta'>
+                      <Link
+                        className='title has-text-primary is-size-4'
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                    </p>
+                  </header>
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    {post.frontmatter.publication ? (
+                      <a
+                        className='publication-notes'
+                        href={post.frontmatter.publicationHref}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {post.frontmatter.publication}
+                      </a>
+                    ) : null}
+                    <br />
+                    <br />
+                    <Link className='button' to={post.fields.slug}>
+                      read
                     </Link>
                   </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br/>
-                  <br/>              
-                  {post.frontmatter.publication ?
-                  <a className="publication-notes" href={post.frontmatter.publicationHref} target="_blank" rel="noreferrer">
-                    {post.frontmatter.publication}</a> : null
-                }
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    read
-                  </Link>
-                </p>
-              </article>
-            </div>
-
-        </FadeInSection>
+                </article>
+              </div>
+            </FadeInSection>
           ))}
       </div>
-    )
+    );
   }
 }
 
@@ -57,7 +73,7 @@ BlogRoll.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export default function BlogRoll() {
   return (

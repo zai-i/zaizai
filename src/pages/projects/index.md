@@ -15,4 +15,6 @@ My [Codepen account](https://codepen.io/zai24) exhibits some assorted experiment
 
 I’ve also made a Twitter bot (now inactive) named [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) that randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
+This personal website was hand-coded by me using Gatsby and Bulma CSS.
+
 As you can hopefully tell, I’m incredibly inspired by design and the potential to bring true beauty into existence when programming.
