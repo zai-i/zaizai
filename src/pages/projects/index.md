@@ -9,9 +9,9 @@ My curiosity about ChatGPT has also led me to create [Emoji575](https://www.emoj
 
 [Lyriki](http://lyriki.zaiz.ai) is another text generation experiment which hopes to find serendipitous rhyming couplets made from Wikipedia articles and famous sonnets. 
 
-For Arabic learning, I have created [a reference tool for Tajweed](https://www.tajweed.zaiz.ai) (correct pronunciation of the Arabic alphabet) and [Alifba](http://alifba.zaiz.ai), a drag-and-drop educational game for anyone curious about developing themselves linguistically.
+For Arabic learning, I have created [a reference tool for Tajweed](https://www.tajweed.zaiz.ai) (correct pronunciation of the Arabic alphabet) and [Alifba](http://alifba.zaiz.ai), a drag-and-drop educational game for anyone curious about stretching themselves linguistically.
 
-My [Codepen account](https://codepen.io/zai24) exhibits some assorted experiments, such as CSS animated cats with hover effects, some Greensock animation experiments, some SVG magic (digital sparkling glitter anyone?) and my favourite, a digital musical xylophone in the shape of a crocodile (which I coined my very own Crockenspiel).
+My [Codepen account](https://codepen.io/zai24) exhibits some assorted experiments, such as cute CSS animated cats with hover effects, some Greensock animation experiments, some sparkling SVG glitter and my personal favourite, a digital musical xylophone in the shape of a crocodile (which I coined my very own Crockenspiel).
 
 I’ve also delved into bot-making, such as for Twitter back in the day. [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
