@@ -3,6 +3,7 @@ templateKey: index-page
 title: Index
 image:
   image: /img/images/portrait.png
+  alt: Illustration by Musfirah Amjad
 heading: Hey
 subheading: I’m Zainab Ismail.
 description: I’m a front-end developer and poet, alternating between London and Manchester.
