@@ -23,6 +23,7 @@ class BlogRollTemplate extends React.Component {
         <div className="reviews">
         <p className="title">“Zainab Ismail’s lush and startling debut explores her tricultural heritage, what she dubs ‘the taproot tapestry’ that ‘wove the heavens in her mouth.’ She may not be able to speak her home in Gujarati harmonies or Arabic auxiliaries, but she is firmly planted in poetry’s formal earth.” Cherry Smyth</p>
         <p className="title">“Reading the unghosting of a new poetic tongue is an ecstatic experience! ‘Lotuses of language’ do ‘float along’ within this collection and I defy anyone not to be moved by their intricacy and beauty.” Emily Critchley</p>
+        <p className="title">“<em>Ecstatic Motion</em> is both endearing and emotive, captured vividly in sparkling, intricate language as rich and captivating as Islamic art.” <a href="https://www.thelondoneconomic.com/entertainment/books/must-reads-of-the-week-spotlight-on-marble-poetry-210730/">Timothy Arden, The London Economic</a></p>
         </div>
         </FadeInSection>
         {posts &&
