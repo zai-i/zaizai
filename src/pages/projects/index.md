@@ -13,7 +13,7 @@ For Arabic learning, I have created [a reference tool for Tajweed](https://www.t
 
 My [Codepen account](https://codepen.io/zai24) exhibits some assorted experiments, such as cute CSS animated cats with hover effects, some Greensock animation experiments, some sparkling SVG glitter and my personal favourite, a digital musical xylophone in the shape of a crocodile (which I coined my very own Crockenspiel).
 
-I’ve also delved into bot-making, such as for Twitter back in the day. [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) randomly generates aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
+I’ve also delved into bot-making, such as for Twitter back in the day. [Idyllic Rain](https://botwiki.org/bot/idyllicrain/) randomly generated aesthetically pleasing scenes of rainy skies and trees, produced in Canvas.
 
 This personal website was hand-coded by me using Gatsby and Bulma CSS.
 
