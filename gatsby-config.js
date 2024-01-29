@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Zaizai",
     description:
-      "Zainab Ismail is a web developer and poet.",
+      "Zainab Ismail is a software engineer and poet.",
   },
   plugins: [
     'gatsby-plugin-dark-mode',
