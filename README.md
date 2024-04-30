@@ -1,1 +1,1 @@
-# Zaiz.ai
+# Zaizai

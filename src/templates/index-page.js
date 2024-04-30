@@ -13,12 +13,12 @@ import Sketch from '../components/Sketch/Sketch'
 const projects = [{
   name: 'hummingbird',
   src: '/img/images/screenshots/hummingbird.png',
-  website: 'https://www.hummingbird.zaiz.ai',
+  website: 'https://www.hummingbird.ghazala.cc',
   },
   {
   name: 'tajweed',
   src: '/img/images/screenshots/tajweed.png',
-  website: 'https://www.tajweed.zaiz.ai',
+  website: 'https://www.tajweed.ghazala.cc',
   }
 ]
 
