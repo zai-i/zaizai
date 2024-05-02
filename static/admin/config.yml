@@ -45,7 +45,7 @@ collections:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Subheading", name: "subheading", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
-          - {label: "Socials", name: "socials", widget: "object", fields: [{label: "Insta", name: "insta", widget: "string"}, {label: "Linkedin", name: "linkedin", widget: "string"}, {label: "Github", name: "github", widget: "string"}]}
+          - {label: "Socials", name: "socials", widget: "object", fields: [{label: "Insta", name: "insta", widget: "string"}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

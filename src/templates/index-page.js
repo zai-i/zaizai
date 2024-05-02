@@ -50,7 +50,6 @@ export const IndexPageTemplate = ({
                         <h2 className='subtitle'>{subheading}</h2>
                         <h3 className='description'>{description}</h3>
                         <a href={socials.insta} className="social is-size-4">insta</a>{' '}
-                        <a href={socials.linkedin} className="social is-size-4">linkedin</a>{' '}
                         <a href={socials.github} className="social is-size-4">github</a>
                       </div>
                     </div>
@@ -167,7 +166,6 @@ export const pageQuery = graphql`
         description
         socials {
           insta
-          linkedin
           github
         }
       }
