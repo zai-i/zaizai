@@ -8,5 +8,5 @@ heading: Hey
 subheading: I’m Zainab Ismail.
 description: I’m a software engineer and poet.
 socials:
-  insta: https://www.instagram.com/zai.ghazalad
+  insta: https://www.instagram.com/zai.ghazala
   github: https://github.com/zai-ghazala
