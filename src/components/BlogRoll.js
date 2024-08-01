@@ -13,7 +13,6 @@ class BlogRollTemplate extends React.Component {
       <div className='columns is-multiline blog-roll'>
         <FadeInSection>
         <a href='https://marblepoetry.com/product/ecstatic-motion-zainab-ismail/'>
-        <h2 className="is-2 title ecstaticmotion">ECSTATIC MOTION AVAILABLE TO BUY ONLINE</h2>
               <figure>
                 <img className="is-rounded" src={image} alt="Ecstatic Motion published by Marble Poetry 2020" />
               </figure>
