@@ -5,22 +5,23 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import IndexBlogRoll from '../components/IndexBlogRoll';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
-import Contact from '../pages/contact'
+import Contact from '../pages/contact';
 import FadeInSection from '../components/FadeInSection';
-import SketchWrapper from '../components/Sketch/SketchWrapper'
-import Sketch from '../components/Sketch/Sketch'
+import SketchWrapper from '../components/Sketch/SketchWrapper';
+import Sketch from '../components/Sketch/Sketch';
 
-const projects = [{
-  name: 'hummingbird',
-  src: '/img/images/screenshots/hummingbird.png',
-  website: 'https://www.hummingbird.ghazala.cc',
+const projects = [
+  {
+    name: 'hummingbird',
+    src: '/img/images/screenshots/hummingbird.png',
+    website: 'https://www.hummingbird.suddenghazals.com',
   },
   {
-  name: 'tajweed',
-  src: '/img/images/screenshots/tajweed.png',
-  website: 'https://www.tajweed.ghazala.cc',
-  }
-]
+    name: 'tajweed',
+    src: '/img/images/screenshots/tajweed.png',
+    website: 'https://www.tajweed.suddenghazals.com',
+  },
+];
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -31,35 +32,35 @@ export const IndexPageTemplate = ({
   description,
 }) => {
   return (
-      <section className='section section--gradient section--index'>
-        <div className='container'>
-          <div className='section'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                    <div className='tile is-ancestor'>
-                      <div className='tile is-child portrait'>
-                        <PreviewCompatibleImage imageInfo={image}/>
-                      </div>
-                      <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
-                        <h1
-                          className='title'
-                        >
-                          {heading}
-                        </h1>
-                        <h2 className='subtitle'>{subheading}</h2>
-                        <h3 className='description'>{description}</h3>
-                        <a href={socials.insta} className="social is-size-4">insta</a>{' '}
-                        <a href={socials.github} className="social is-size-4">github</a>
-                      </div>
-                    </div>
-                    </div>
+    <section className='section section--gradient section--index'>
+      <div className='container'>
+        <div className='section'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='content'>
+                <div className='tile is-ancestor'>
+                  <div className='tile is-child portrait'>
+                    <PreviewCompatibleImage imageInfo={image} />
+                  </div>
+                  <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
+                    <h1 className='title'>{heading}</h1>
+                    <h2 className='subtitle'>{subheading}</h2>
+                    <h3 className='description'>{description}</h3>
+                    <a href={socials.insta} className='social is-size-4'>
+                      insta
+                    </a>{' '}
+                    <a href={socials.github} className='social is-size-4'>
+                      github
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-        <hr/>
-        <FadeInSection>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <FadeInSection>
         <div className='column'>
           <IndexBlogRoll />
           <div className='column has-text-centered'>
@@ -68,45 +69,50 @@ export const IndexPageTemplate = ({
             </Link>
           </div>
         </div>
-        <hr/>
-        </FadeInSection>
-        <FadeInSection>
+        <hr />
+      </FadeInSection>
+      <FadeInSection>
         <div className='column'>
-          <div className="projects">
-          {projects.map(x => {
-            return <div key={x.name} className="project">
-            <a href={x.website}><img src={x.src} alt={x.name}/>
-            <p>
-            {x.name}
-          </p></a>
-          </div>})}
-          <div className="newline"></div>
-          <div className="project">
-          <div className="sketch">
-          <SketchWrapper sketch={Sketch}/>
-          </div>
-          <span>Dreaming up more plans.<br/>Watch this space… or draw something in it.</span>
-          </div>
+          <div className='projects'>
+            {projects.map((x) => {
+              return (
+                <div key={x.name} className='project'>
+                  <a href={x.website}>
+                    <img src={x.src} alt={x.name} />
+                    <p>{x.name}</p>
+                  </a>
+                </div>
+              );
+            })}
+            <div className='newline'></div>
+            <div className='project'>
+              <div className='sketch'>
+                <SketchWrapper sketch={Sketch} />
+              </div>
+              <span>
+                Dreaming up more plans.
+                <br />
+                Watch this space… or draw something in it.
+              </span>
+            </div>
           </div>
           <div className='column has-text-centered'>
             <Link className='btn' to='/projects'>
               see more projects
             </Link>
           </div>
-      </div>
+        </div>
       </FadeInSection>
       <FadeInSection>
-      <div className='column has-text-centered section--contact'>
-
-        <div className="pen"><img src="/img/images/contact.png" alt="contact"/></div>
-        <h3 className="is-size-4 is-bold-light">
-          send me a message
-        </h3>
-      <Contact />
-      </div>
-
+        <div className='column has-text-centered section--contact'>
+          <div className='pen'>
+            <img src='/img/images/contact.png' alt='contact' />
+          </div>
+          <h3 className='is-size-4 is-bold-light'>send me a message</h3>
+          <Contact />
+        </div>
       </FadeInSection>
-      </section>
+    </section>
   );
 };
 
