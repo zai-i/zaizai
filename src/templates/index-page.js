@@ -92,7 +92,7 @@ export const IndexPageTemplate = ({
               <span>
                 Dreaming up more plans.
                 <br />
-                Watch this space… or draw something in it.
+                Watch this space, or draw something in it.
               </span>
             </div>
           </div>
