@@ -9,7 +9,7 @@ I've worked for several years as a front-end developer at Wonderbly and before t
 
 I adore the process of building online experiments where the two sides of creativity meet, from word-based toys to tools for learning Arabic. You can find them on my <a href="/projects">projects page</a>.
 
-My pamphlet, Ecstatic Motion, was published by Marble Poetry in 2020. My poems have appeared in magazines like The Fortnightly Review, Streetcake, Tears In The Fence and elsewhere, as well as several anthologies like <i>Wretched Strangers</i> from Boiler House Press. 
+My pamphlet, <i>Ecstatic Motion</i>, was published by Marble Poetry in 2020. My poems have appeared in magazines like The Fortnightly Review, Streetcake, Tears In The Fence and elsewhere, as well as several anthologies like <i>Wretched Strangers</i> from Boiler House Press. 
 
 In my writing, I'm drawn to imagery celebrating the richness and beauty of colours, nature, flowers, gemstones and cities. The concepts of faith, love and memory also recur in both free and formal verse.
 
