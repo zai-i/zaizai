@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import IndexBlogRoll from '../components/IndexBlogRoll';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Contact from '../pages/contact';
 import FadeInSection from '../components/FadeInSection';
 import SketchWrapper from '../components/Sketch/SketchWrapper';
@@ -40,7 +39,7 @@ export const IndexPageTemplate = ({
               <div className='content'>
                 <div className='tile is-ancestor'>
                   <div className='tile is-child portrait'>
-                    <img src={image.image} alt={image.alt} />
+                    <img src="/img/images/portrait.png" alt="illustration by Musfirah Amjad" />
                   </div>
                   <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
                     <h1 className='title'>{heading}</h1>
@@ -154,10 +153,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        image {
-          alt
-          image
-        }
         heading
         subheading
         description
