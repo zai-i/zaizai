@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item is-size-4" onClick={() => setIsActive(!isActive)} to="/ZainabIsmailCV.pdf">
+            <Link className="navbar-item is-size-4" onClick={() => setIsActive(!isActive)} to="/CV.pdf">
               CV.pdf
             </Link>
             </li>
