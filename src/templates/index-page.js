@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
               <div className='content'>
                 <div className='tile is-ancestor'>
                   <div className='tile is-child portrait'>
-                    <PreviewCompatibleImage imageInfo={image} />
+                    <img src={image.image} alt={image.alt} />
                   </div>
                   <div className='tile is-child is-flex is-flex-direction-column is-justify-content-center index'>
                     <h1 className='title'>{heading}</h1>
