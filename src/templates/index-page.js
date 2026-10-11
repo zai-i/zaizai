@@ -45,6 +45,9 @@ export const IndexPageTemplate = ({
                     <h1 className='title'>{heading}</h1>
                     <h2 className='subtitle'>{subheading}</h2>
                     <h3 className='description'>{description}</h3>
+                    <a href="/about" className='social is-size-4'>
+                      more about me
+                    </a>{' '}
                     <a href={socials.insta} className='social is-size-4'>
                       insta
                     </a>{' '}
