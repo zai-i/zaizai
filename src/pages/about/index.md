@@ -1,7 +1,7 @@
 ---
 templateKey: default-page
 path: /about
-title: About
+title: About Me
 ---
 I’m Zainab Ismail, a software engineer, technical copywriter and poet based in London.
 
