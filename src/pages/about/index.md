@@ -3,7 +3,7 @@ templateKey: default-page
 path: /about
 title: About Me
 ---
-I’m Zainab Ismail, a software engineer, technical copywriter and poet based in London.
+I’m Zainab Ismail, a software engineer, technical writer and poet based in London.
 
 I’ve worked for several years as a front-end developer at Wonderbly and, before that, in the e-books team at HarperCollins Publishers; my career in digital publishing has situated my specialities somewhere between storytelling and code. I studied English Literature with Creative Writing at the University of Greenwich.
 
