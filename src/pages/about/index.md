@@ -11,6 +11,6 @@ I adore both the technical and artistic processes which are involved in building
 
 My pamphlet, <i>Ecstatic Motion</i>, was published by Marble Poetry in 2020. My poems have appeared in magazines like <i>The Fortnightly Review</i>, <i>Streetcake</i>, <i>Tears In The Fence</i>, as well as several anthologies like <i>Wretched Strangers</i> from Boiler House Press. 
 
-In my writing, I’m drawn to imagery celebrating the richness and beauty of colours found in nature. I love flowers, forests, gemstones, sunsets, astronomy. The concepts of faith, love and memory also recur in both free and formal verse, and London often forms the backdrop of inspiration. I embrace wordplay and rhyme, pay attention to rhythm and enjoy the odd pun here and there, so my style is playful even if choosing to tackle darker themes.
+In my writing, I’m drawn to imagery celebrating the richness and beauty of colours found in nature. I love flowers, forests, gemstones, sunsets, astronomy. The concepts of faith, love and memory recur in both free and formal verse, and London often forms the backdrop of inspiration. I embrace wordplay and rhyme, pay attention to rhythm and enjoy the odd pun here and there, so my style is playful even if choosing to tackle darker themes.
 
 Feel free to message me or find me on <a href="https://www.instagram.com/zai.ghazala">Instagram</a> or <a href="https://github.com/zai-i">GitHub</a>.
